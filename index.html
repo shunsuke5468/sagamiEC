@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具専門店Sagami | AMERICAN GARAGE STYLE</title>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Oswald:wght@500;700&family=IBM+Plex+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#2b2725;
+    --ink:#2b2725;
+    --vermilion:#b7382e;
+    --vermilion-deep:#8f281f;
+    --cream:#f4f2ee;
+    --cream-dark:#e7e2d8;
+    --steel:#4d4741;
+    --steel-light:#7a736a;
+    --gold:#c99a3f;
+    --font-display: 'Graduate', 'Georgia', serif;
+    --font-head: 'Oswald', 'Arial Narrow', sans-serif;
+    --font-script: 'Yellowtail', cursive;
+    --font-body: 'Inter', 'Hiragino Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+    line-height:1.6;
+    position:relative;
+  }
+  /* 紙のグレイン質感を全体に薄くのせる */
+  body::after{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index:9999;
+    opacity:0.55;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  /* ディストレス(かすれ)マスク: 見出し・イラストに適用(強め) */
+  .distress{
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.11' numOctaves='5' seed='7'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 .35 .75 1 1 1 1 1 1'/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='SourceGraphic'/%3E%3C/filter%3E%3Crect width='300' height='300' fill='black' filter='url(%23d)'/%3E%3C/svg%3E");
+    mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.11' numOctaves='5' seed='7'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 .35 .75 1 1 1 1 1 1'/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='SourceGraphic'/%3E%3C/filter%3E%3Crect width='300' height='300' fill='black' filter='url(%23d)'/%3E%3C/svg%3E");
+    -webkit-mask-size:300px 300px;
+    mask-size:300px 300px;
+  }
+  a{color:inherit; text-decoration:none;}
+
+  /* ---------- ストライプ(星条旗風レッドライン) ---------- */
+  .hazard{
+    height:12px;
+    background: repeating-linear-gradient(90deg,
+      var(--vermilion) 0 60px,
+      var(--cream) 60px 72px,
+      var(--black) 72px 132px,
+      var(--cream) 132px 144px);
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    background: var(--black);
+    color: var(--cream);
+    padding: 18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 3px solid var(--vermilion);
+  }
+  .logo{
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .logo span{color:var(--vermilion);}
+  nav a{
+    margin-left: 28px;
+    font-size: 0.85rem;
+    font-family: var(--font-head);
+    font-weight:700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  nav a:hover{ color: var(--vermilion); }
+
+  /* ---------- HERO (ヴィンテージTシャツグラフィック風) ---------- */
+  .hero{
+    background: var(--cream);
+    color: var(--ink);
+    padding: 70px 5% 60px;
+    position: relative;
+    overflow:hidden;
+    text-align:center;
+  }
+  .hero h1{
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7.5vw, 5.4rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: 0.03em;
+    color: var(--vermilion);
+    font-weight: 400;
+  }
+  .hero .script{
+    font-family: var(--font-script);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: var(--vermilion);
+    display:block;
+    margin: -4px 0 0;
+    transform: rotate(-4deg);
+    text-transform: none;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-art{
+    width: min(430px, 74vw);
+    margin: -6px auto -10px;
+    display:block;
+    color: var(--ink);
+    position: relative;
+    animation: driveIn 1.4s cubic-bezier(.2,.8,.3,1) both,
+               suspension 2.6s ease-in-out 1.4s infinite;
+  }
+  @keyframes driveIn{
+    0%{ transform: translateX(-160%) rotate(-3deg); opacity:0; }
+    70%{ transform: translateX(4%) rotate(1deg); opacity:1; }
+    85%{ transform: translateX(-2%) rotate(-0.5deg); }
+    100%{ transform: translateX(0) rotate(0); }
+  }
+  @keyframes suspension{
+    0%,100%{ transform: translateY(0) rotate(0deg); }
+    50%{ transform: translateY(-3px) rotate(0.4deg); }
+  }
+
+  /* ---------- 土煙パーティクル ---------- */
+  .dust-wrap{
+    position:relative;
+    width: min(430px, 74vw);
+    height: 0;
+    margin: 0 auto;
+  }
+  .dust{
+    position:absolute;
+    bottom: 6px;
+    left: 6%;
+    width: 14px; height:14px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(122,115,106,0.55) 0%, rgba(122,115,106,0) 70%);
+    opacity:0;
+    animation: dustPuff 1.6s ease-out 1.3s;
+  }
+  .dust:nth-child(2){ left:10%; width:20px; height:20px; animation-delay:1.42s; }
+  .dust:nth-child(3){ left:2%;  width:10px; height:10px; animation-delay:1.5s; }
+  @keyframes dustPuff{
+    0%{ opacity:0; transform: translate(0,0) scale(0.4); }
+    15%{ opacity:0.8; }
+    100%{ opacity:0; transform: translate(-70px, -22px) scale(2.4); }
+  }
+
+  /* ---------- フェードイン(ヒーロー内テキスト) ---------- */
+  .fade-seq{ opacity:0; animation: fadeInUp .8s ease forwards; }
+  .hero h1.distress:first-of-type{ animation-delay: 1.55s; }
+  .hero .script{ animation-delay: 1.75s; }
+  .hero .sub-en{ animation-delay: 1.95s; }
+  .hero h1.distress:last-of-type{ animation-delay: 2.1s; }
+  .hero p{ animation-delay: 2.3s; }
+  .hero-cta{ animation-delay: 2.45s; }
+  @keyframes fadeInUp{
+    from{ opacity:0; transform: translateY(16px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+
+  /* ---------- スクロールリビール ---------- */
+  .reveal{
+    opacity:0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .reveal.in-view{
+    opacity:1;
+    transform: translateY(0);
+  }
+  .grid .card.reveal:nth-child(2){ transition-delay: .1s; }
+  .grid .card.reveal:nth-child(3){ transition-delay: .2s; }
+  .grid .card.reveal:nth-child(4){ transition-delay: .3s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .hero-art, .fade-seq, .hero h1, .hero .script, .hero .sub-en, .hero p, .hero-cta, .reveal{
+      animation: none !important;
+      transition: none !important;
+      opacity:1 !important;
+      transform:none !important;
+    }
+  }
+  .hero .sub-en{
+    font-family: var(--font-head);
+    font-weight:700;
+    color: var(--vermilion);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    margin: 4px 0 6px;
+  }
+  .hero p{
+    margin: 26px auto 0;
+    max-width: 560px;
+    color: var(--steel);
+  }
+  .hero-cta{
+    margin-top: 32px;
+    display:flex; gap:16px; flex-wrap:wrap; justify-content:center;
+  }
+  .btn{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 15px 32px;
+    display:inline-block;
+    border: 2px solid var(--vermilion);
+  }
+  .btn-solid{
+    background: var(--vermilion); color: var(--cream);
+    box-shadow: 4px 4px 0 var(--black);
+  }
+  .btn-outline{ color: var(--vermilion); }
+
+  .meta-bar{
+    background: var(--steel);
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    padding: 10px 5%;
+    display:flex; gap:32px; flex-wrap:wrap;
+  }
+  .meta-bar b{color:var(--vermilion); margin-right:6px;}
+
+  /* ---------- SECTION 共通 ---------- */
+  section{ padding: 70px 5%; }
+  .section-head{
+    display:flex; align-items:baseline; gap:14px;
+    margin-bottom: 36px;
+    border-bottom: 4px solid var(--ink);
+    padding-bottom: 14px;
+    position:relative;
+  }
+  .section-head::after{
+    content:"";
+    position:absolute; bottom:-4px; left:0;
+    width:90px; height:4px;
+    background: var(--vermilion);
+  }
+  .section-head .tag{
+    font-family: var(--font-head);
+    font-weight:700;
+    background: transparent;
+    color: var(--vermilion);
+    border: 2px solid var(--vermilion);
+    padding: 3px 12px; font-size:0.75rem; letter-spacing:0.18em;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+  }
+  .section-head h2{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .section-sub{ color:var(--steel-light); font-size:0.9rem; margin-left:auto; font-family: var(--font-mono);}
+
+  /* ---------- 商品カード(品番タグ風) ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 22px;
+  }
+  .card{
+    background: #fffdf7;
+    border: 2px solid var(--ink);
+    position: relative;
+    box-shadow: 5px 5px 0 rgba(20,18,16,0.18);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{ transform: translate(-2px,-4px); box-shadow: 8px 9px 0 rgba(20,18,16,0.22); }
+  .card::before{
+    content:"";
+    position:absolute; top:12px; left:50%;
+    transform: translateX(-50%);
+    width:14px; height:14px;
+    border-radius:50%;
+    background: var(--cream);
+    box-shadow: inset 0 0 0 3px var(--ink);
+    z-index:2;
+  }
+  .card-img{
+    height:150px;
+    background:
+      repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,0.02) 12px 24px),
+      linear-gradient(160deg, #2c2824 0%, var(--black) 100%);
+    background-color: var(--black);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--steel-light);
+    font-family: var(--font-mono);
+    font-size:0.75rem;
+    border-bottom: 2px dashed var(--ink);
+  }
+  .card-body{ padding: 18px 16px 16px; }
+  .card-id{
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--steel-light);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .card-name{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 1.1rem;
+    margin: 6px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .card-price{
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--vermilion);
+  }
+  .card-stock{
+    display:inline-block;
+    margin-top:8px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    background: var(--cream);
+    border: 1px solid var(--steel-light);
+  }
+  .card-stock.ok{ border-color:#3b8f4c; color:#3b8f4c; }
+  .card-stock.low{ border-color:var(--vermilion-deep); color:var(--vermilion-deep); }
+  .card-buy{
+    display:block; text-align:center;
+    margin-top:14px;
+    background: var(--black); color: var(--cream);
+    font-family: var(--font-head); font-weight:700; font-size:0.85rem;
+    text-transform: uppercase; letter-spacing:0.08em;
+    padding: 11px;
+    box-shadow: 3px 3px 0 var(--vermilion);
+  }
+  .card-buy:hover{ background: var(--vermilion); box-shadow: 3px 3px 0 var(--black); }
+  .spec-tags{
+    display:flex; flex-wrap:wrap; gap:6px;
+    margin: 10px 0 4px;
+  }
+  .spec-tag{
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--steel);
+    background: var(--cream);
+    border: 1px solid #ddd8cc;
+    padding: 3px 7px;
+  }
+  .ship-badge{
+    display:inline-flex; align-items:center; gap:4px;
+    font-family: var(--font-mono); font-size:0.65rem;
+    color:#3b8f4c; margin-top:8px;
+  }
+  .ship-badge::before{ content:"●"; font-size:0.5rem; }
+
+  /* ---------- 並び替えバー・フィルターチップ ---------- */
+  .toolbar{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:14px;
+    margin-bottom: 24px;
+  }
+  .sort-bar{
+    display:flex; gap:0;
+    font-family: var(--font-mono); font-size: 0.78rem;
+  }
+  .sort-bar a{
+    padding: 7px 14px;
+    border: 1px solid var(--black);
+    border-left: none;
+    color: var(--black);
+  }
+  .sort-bar a:first-child{ border-left: 1px solid var(--black); }
+  .sort-bar a.active{ background: var(--black); color: var(--vermilion); }
+
+  .filter-chips{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-bottom: 28px;
+  }
+  .chip{
+    font-family: var(--font-mono); font-size: 0.75rem;
+    padding: 6px 14px;
+    border: 1px solid var(--steel-light);
+    color: var(--steel);
+    background:#fff;
+  }
+  .chip.active{
+    background: var(--vermilion);
+    border-color: var(--vermilion);
+    color: var(--black);
+    font-weight:700;
+  }
+
+  /* ---------- レンタルセクション(ダーク反転) ---------- */
+  .rental-section{
+    background:
+      repeating-linear-gradient(90deg, transparent 0 80px, rgba(200,52,42,0.05) 80px 82px),
+      var(--black);
+    color: var(--cream);
+  }
+  .rental-section .section-head{ border-bottom-color: var(--vermilion); }
+  .rental-section .section-head::after{ background: var(--gold); }
+  .rental-section .section-head h2{ color: var(--cream); }
+  .rental-section .section-sub{ color: var(--steel-light); }
+
+  .rental-card{
+    background: #201c18;
+    border-color: var(--gold);
+    box-shadow: 5px 5px 0 rgba(201,154,63,0.15);
+  }
+  .rental-card::before{ background: var(--black); box-shadow: inset 0 0 0 3px var(--gold); }
+  .rental-card .card-img{ border-bottom-color: var(--gold); }
+  .rental-card .card-name{ color: var(--cream); }
+  .avail-row{
+    display:flex; gap:4px; margin-top:12px; flex-wrap:wrap;
+  }
+  .avail-day{
+    width: 26px; height:26px;
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--font-mono); font-size:0.65rem;
+    background: #3b8f4c; color:#fff;
+  }
+  .avail-day.full{ background: var(--vermilion); }
+  .avail-legend{
+    font-family: var(--font-mono); font-size:0.7rem;
+    color: var(--steel-light); margin-top:10px;
+  }
+  .rental-btn{
+    display:block; text-align:center; margin-top:14px;
+    background: var(--gold); color: var(--black);
+    font-family: var(--font-head); font-weight:700; font-size:0.85rem;
+    text-transform: uppercase; letter-spacing:0.08em;
+    padding: 11px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+  }
+
+  /* ---------- 予約フォーム ---------- */
+  .form-section{
+    background: var(--cream);
+  }
+  .form-wrap{
+    max-width: 640px;
+    background:#fffdf7;
+    border: 3px solid var(--ink);
+    box-shadow: 8px 8px 0 rgba(20,18,16,0.15);
+    padding: 32px;
+  }
+  .form-row{ margin-bottom:18px; }
+  .form-row label{
+    display:block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing:0.05em;
+    margin-bottom:6px;
+    color: var(--steel);
+  }
+  .form-row input, .form-row select, .form-row textarea{
+    width:100%;
+    padding: 10px 12px;
+    border: 1px solid var(--steel-light);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    background: var(--cream);
+  }
+  .form-two{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .form-submit{
+    background: var(--vermilion); color: var(--cream);
+    border:none; padding: 15px 34px;
+    font-family: var(--font-head); font-weight:700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing:0.1em; cursor:pointer;
+    box-shadow: 4px 4px 0 var(--black);
+  }
+  .form-submit:hover{ background: var(--vermilion-deep); }
+
+  /* ---------- お知らせ ---------- */
+  .news-section{
+    background: var(--cream-dark);
+    padding: 50px 5% 60px;
+  }
+  .news-list{
+    max-width: 780px;
+  }
+  .news-item{
+    display:flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid #cfc5b0;
+    flex-wrap: wrap;
+  }
+  .news-item:first-child{ border-top: 1px solid #cfc5b0; }
+  .news-date{
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--steel-light);
+    min-width: 90px;
+  }
+  .news-tag{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: var(--vermilion);
+    border: 1px solid var(--vermilion);
+    padding: 2px 9px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .news-title{
+    font-size: 0.92rem;
+    color: var(--ink);
+    flex: 1;
+    min-width: 200px;
+  }
+  .news-title a{ border-bottom: 1px solid transparent; }
+  .news-title a:hover{ border-bottom-color: var(--vermilion); color: var(--vermilion); }
+  .news-empty{
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--steel-light);
+    padding: 20px 0;
+  }
+  .faq-item{
+    border-bottom: 1px solid #ddd8cc;
+    padding: 18px 0;
+  }
+  .faq-q{
+    font-family: var(--font-mono);
+    font-weight:700;
+    color: var(--vermilion);
+    margin-bottom: 6px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background: var(--black);
+    color: var(--steel-light);
+    padding: 46px 5%;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;
+    border-top: 4px solid var(--vermilion);
+  }
+  footer .brand{
+    color: var(--cream);
+    font-family: var(--font-display);
+    font-size:1.15rem;
+    text-transform:uppercase;
+  }
+  footer .brand::after{
+    content:" ★";
+    color: var(--gold);
+  }
+
+  @media (max-width:640px){
+    nav{ display:none; }
+    .form-two{ grid-template-columns:1fr; }
+    footer{ flex-direction:column; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SAGAMI<span>工具</span></div>
+    <nav>
+      <a href="#sale">販売</a>
+      <a href="#rental">レンタル</a>
+      <a href="#news">お知らせ</a>
+      <a href="#faq">FAQ</a>
+      <a href="#access">アクセス</a>
+    </nav>
+  </header>
+  <div class="hazard"></div>
+
+  <div class="hero">
+    <h1 class="distress fade-seq">SAGAMI</h1>
+    <span class="script fade-seq">Tool Shop</span>
+
+    <!-- ラングラー風4WDのヴィンテージイラスト -->
+    <svg class="hero-art" viewBox="0 0 400 210" fill="currentColor" role="img" aria-label="vintage 4wd truck">
+      <g class="distress">
+      <!-- スペアタイヤ(背面) -->
+      <circle cx="32" cy="112" r="26"/>
+      <circle cx="32" cy="112" r="12" fill="#f4f2ee"/>
+      <circle cx="32" cy="112" r="5"/>
+
+      <!-- ボディ -->
+      <path d="M38,150 V104 H50 V90 H208 V56 L216,52 L226,90 H262 L270,97 H348 L356,104 V150 Z"/>
+
+      <!-- タイヤアーチ(切り欠き) -->
+      <circle cx="112" cy="150" r="46" fill="#f4f2ee"/>
+      <circle cx="298" cy="150" r="46" fill="#f4f2ee"/>
+
+      <!-- ウィンドシールド(立ち気味) -->
+      <path d="M226,90 L216,48 L224,46 L236,90 Z"/>
+
+      <!-- ロールバー -->
+      <path d="M146,90 V66 Q146,56 156,56 H166 Q176,56 176,66 V90"
+            fill="none" stroke="currentColor" stroke-width="9"/>
+
+      <!-- タイヤ -->
+      <g>
+        <circle cx="112" cy="150" r="40"/>
+        <circle cx="112" cy="150" r="21" fill="#f4f2ee"/>
+        <circle cx="112" cy="150" r="8"/>
+        <path d="M112,150 l0,-19 M112,150 l18,6 M112,150 l-18,6 M112,150 l11,-15 M112,150 l-11,-15" stroke="currentColor" stroke-width="4"/>
+      </g>
+      <g>
+        <circle cx="298" cy="150" r="40"/>
+        <circle cx="298" cy="150" r="21" fill="#f4f2ee"/>
+        <circle cx="298" cy="150" r="8"/>
+        <path d="M298,150 l0,-19 M298,150 l18,6 M298,150 l-18,6 M298,150 l11,-15 M298,150 l-11,-15" stroke="currentColor" stroke-width="4"/>
+      </g>
+
+      <!-- ヘッドライト・バンパー -->
+      <circle cx="344" cy="102" r="6" fill="#f4f2ee"/>
+      <rect x="352" y="116" width="22" height="10"/>
+      <rect x="20" y="128" width="16" height="10"/>
+
+      <!-- 地面ライン -->
+      <rect x="30" y="192" width="340" height="4"/>
+
+      <g font-family="Oswald, sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">
+        <text x="200" y="22">EST. ★ 2018</text>
+      </g>
+      </g>
+    </svg>
+    <div class="dust-wrap">
+      <span class="dust"></span>
+      <span class="dust"></span>
+      <span class="dust"></span>
+    </div>
+
+    <div class="sub-en fade-seq">S A L E S&nbsp;&nbsp;&amp;&nbsp;&nbsp;R E N T A L</div>
+    <h1 class="distress fade-seq" style="font-size:clamp(2rem,5.5vw,4rem);">POWER TOOLS</h1>
+
+    <p class="fade-seq">マキタをはじめとした電動工具・エア工具の販売とレンタルを行う地域密着の工具専門店。人気の工具から厳選してオンラインでお届けします。</p>
+    <div class="hero-cta fade-seq">
+      <a href="#sale" class="btn btn-solid">販売商品を見る</a>
+      <a href="#rental" class="btn btn-outline">レンタル空き状況</a>
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><b>営業時間</b>9:00–19:00</div>
+    <div><b>定休日</b>日曜（土曜も当面休業）</div>
+    <div><b>所在地</b>神奈川県伊勢原市高森3-1-63</div>
+  </div>
+
+  <!-- 販売セクション -->
+  <section id="sale">
+    <div class="section-head">
+      <span class="tag">SALE</span>
+      <h2>人気商品（販売）</h2>
+      <span class="section-sub">STRIPE決済リンクで購入</span>
+    </div>
+
+    <div class="toolbar">
+      <div class="sort-bar">
+        <a href="#" class="active">人気順</a>
+        <a href="#">価格が安い順</a>
+        <a href="#">価格が高い順</a>
+        <a href="#">新着順</a>
+      </div>
+    </div>
+    <div class="filter-chips">
+      <span class="chip active">すべて</span>
+      <span class="chip">インパクトドライバ</span>
+      <span class="chip">マルノコ</span>
+      <span class="chip">エア工具</span>
+      <span class="chip">バッテリー・充電器</span>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-img">PRODUCT IMAGE</div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0001 / マキタ</div>
+          <div class="card-name">充電式インパクトドライバ</div>
+          <div class="card-price">¥18,700</div>
+          <div class="spec-tags">
+            <span class="spec-tag">電圧:18V</span>
+            <span class="spec-tag">最大トルク:180〜199N.m</span>
+          </div>
+          <span class="card-stock ok">在庫あり</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">PRODUCT IMAGE</div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0002 / マキタ</div>
+          <div class="card-name">充電式マルノコ 40V</div>
+          <div class="card-price">¥42,000</div>
+          <div class="spec-tags">
+            <span class="spec-tag">電圧:36-40V</span>
+            <span class="spec-tag">刃径:165mm</span>
+          </div>
+          <span class="card-stock low">残りわずか</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">PRODUCT IMAGE</div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0003 / OSK</div>
+          <div class="card-name">エアインパクトレンチ</div>
+          <div class="card-price">¥15,400</div>
+          <div class="spec-tags">
+            <span class="spec-tag">最大トルク:300〜400N.m</span>
+          </div>
+          <span class="card-stock ok">在庫あり</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- レンタルセクション -->
+  <section id="rental" class="rental-section">
+    <div class="section-head">
+      <span class="tag">RENTAL</span>
+      <h2>レンタル商品・空き状況</h2>
+      <span class="section-sub">フォーム予約 → 店舗で確定連絡</span>
+    </div>
+    <div class="grid">
+
+      <div class="card rental-card">
+        <div class="card-img">PRODUCT IMAGE</div>
+        <div class="card-body">
+          <div class="card-id">RENTAL-0001</div>
+          <div class="card-name">高圧洗浄機</div>
+          <div class="card-price">¥3,000 / 日</div>
+          <div class="avail-row">
+            <div class="avail-day">7/14</div>
+            <div class="avail-day">7/15</div>
+            <div class="avail-day full">7/16</div>
+            <div class="avail-day">7/17</div>
+            <div class="avail-day">7/18</div>
+          </div>
+          <div class="avail-legend">緑＝空きあり／赤＝満数</div>
+          <a href="#form" class="rental-btn">この日程で予約する</a>
+        </div>
+      </div>
+
+      <div class="card rental-card">
+        <div class="card-img">PRODUCT IMAGE</div>
+        <div class="card-body">
+          <div class="card-id">RENTAL-0002</div>
+          <div class="card-name">発電機 2.0kVA</div>
+          <div class="card-price">¥4,500 / 日</div>
+          <div class="avail-row">
+            <div class="avail-day">7/14</div>
+            <div class="avail-day full">7/15</div>
+            <div class="avail-day full">7/16</div>
+            <div class="avail-day">7/17</div>
+            <div class="avail-day">7/18</div>
+          </div>
+          <div class="avail-legend">緑＝空きあり／赤＝満数</div>
+          <a href="#form" class="rental-btn">この日程で予約する</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 予約フォーム -->
+  <section class="form-section" id="form">
+    <div class="section-head">
+      <span class="tag">BOOKING</span>
+      <h2>レンタル予約フォーム</h2>
+    </div>
+    <div class="form-wrap">
+      <div class="form-row">
+        <label>希望商品</label>
+        <select><option>高圧洗浄機</option><option>発電機 2.0kVA</option></select>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label>貸出希望日</label>
+          <input type="date">
+        </div>
+        <div class="form-row">
+          <label>返却希望日</label>
+          <input type="date">
+        </div>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label>お名前</label>
+          <input type="text" placeholder="山田 太郎">
+        </div>
+        <div class="form-row">
+          <label>電話番号 または LINE ID</label>
+          <input type="text" placeholder="090-XXXX-XXXX">
+        </div>
+      </div>
+      <div class="form-row">
+        <label>備考</label>
+        <textarea rows="3" placeholder="使用用途など" id="f-note"></textarea>
+      </div>
+      <button class="form-submit" id="f-submit">予約リクエストを送る</button>
+      <p id="f-status" style="margin-top:12px; font-family:var(--font-mono); font-size:0.8rem;"></p>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section class="news-section" id="news">
+    <div class="section-head">
+      <span class="tag">NEWS</span>
+      <h2>お知らせ</h2>
+    </div>
+    <div class="news-list" id="news-list">
+      <!-- JSで自動描画されます -->
+    </div>
+  </section>
+
+  <script>
+    // お知らせをGAS経由でスプレッドシートから取得して描画する
+    // ▼ 予約フォームと同じGASデプロイURLを使う(下のスクリプトのGAS_ENDPOINTと合わせてください)
+    const NEWS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzqomcD1Pvaf7Vbe1cmrBC9EGACNupAot96HFwOoHkyguhk0SBdyTEHwP-rZC5gBugP/exec?action=news";
+
+    // 取得に失敗した場合の表示用フォールバック(スプレッドシート未接続時のプレビュー用)
+    const fallbackNewsData = [
+      { date: "2026-07-14", tag: "商品情報", title: "レンタル品に「発電機 2.0kVA」を追加しました" },
+      { date: "2026-07-01", tag: "営業案内", title: "夏季につき、しばらくの間 土曜日も休業とさせていただきます" },
+      { date: "2026-06-20", tag: "サイト", title: "オンラインでの販売・レンタル予約受付を開始しました" }
+    ];
+
+    function renderNews(newsData){
+      const newsListEl = document.getElementById("news-list");
+      if (!newsData || newsData.length === 0){
+        newsListEl.innerHTML = '<p class="news-empty">現在お知らせはありません。</p>';
+        return;
+      }
+      newsListEl.innerHTML = newsData.map(item => `
+        <div class="news-item">
+          <span class="news-date">${item.date.replace(/-/g, "/")}</span>
+          <span class="news-tag">${item.tag}</span>
+          <span class="news-title">${item.title}</span>
+        </div>
+      `).join("");
+    }
+
+    async function loadNews(){
+      try {
+        const res = await fetch(NEWS_ENDPOINT);
+        if (!res.ok) throw new Error("network error");
+        const data = await res.json();
+        renderNews(data.news);
+      } catch (err) {
+        // GAS未接続・オフライン時はフォールバックのサンプルデータを表示
+        renderNews(fallbackNewsData);
+      } finally {
+        setupRevealObserver();
+      }
+    }
+
+    // スクロールで要素をフェードイン表示する(お知らせ描画後に対象を確定するため関数化)
+    function setupRevealObserver(){
+      const revealTargets = document.querySelectorAll(
+        '.section-head, .card, .faq-item, .form-wrap, .toolbar, .filter-chips, .news-item'
+      );
+      revealTargets.forEach(el => {
+        if (!el.classList.contains('reveal')){
+          el.classList.add('reveal');
+          io.observe(el);
+        }
+      });
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    // お知らせ以外の要素は先に監視を開始し、お知らせ分は取得完了後に追加登録する
+    setupRevealObserver();
+    loadNews();
+  </script>
+
+  <script>
+    // ▼▼ デプロイ後、GASのウェブアプリURLに差し替えてください ▼▼
+    const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzqomcD1Pvaf7Vbe1cmrBC9EGACNupAot96HFwOoHkyguhk0SBdyTEHwP-rZC5gBugP/exec";
+
+    document.getElementById("f-submit").addEventListener("click", async () => {
+      const statusEl = document.getElementById("f-status");
+      const payload = {
+        productId: "RENTAL-0001", // 実装時：選択中の商品IDに置き換え
+        productName: document.querySelector(".form-row select").value,
+        startDate: document.querySelectorAll(".form-row input[type=date]")[0].value,
+        endDate: document.querySelectorAll(".form-row input[type=date]")[1].value,
+        name: document.querySelectorAll(".form-row input[type=text]")[0].value,
+        contact: document.querySelectorAll(".form-row input[type=text]")[1].value,
+        note: document.getElementById("f-note").value
+      };
+
+      if (!payload.startDate || !payload.endDate || !payload.name || !payload.contact) {
+        statusEl.textContent = "未入力の項目があります。";
+        statusEl.style.color = "var(--vermilion)";
+        return;
+      }
+
+      statusEl.textContent = "送信中...";
+      statusEl.style.color = "var(--steel)";
+
+      try {
+        const res = await fetch(GAS_ENDPOINT, {
+          method: "POST",
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.result === "success") {
+          statusEl.textContent = `予約リクエストを受け付けました(受付番号 #${data.reservationId})。店舗からの確定連絡をお待ちください。`;
+          statusEl.style.color = "#3b8f4c";
+        } else {
+          statusEl.textContent = "送信に失敗しました：" + data.message;
+          statusEl.style.color = "var(--vermilion)";
+        }
+      } catch (err) {
+        statusEl.textContent = "通信エラーが発生しました。時間をおいて再度お試しください。";
+        statusEl.style.color = "var(--vermilion)";
+      }
+    });
+  </script>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-head">
+      <span class="tag">FAQ</span>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. レンタルの予約はすぐ確定しますか？</div>
+      <div>フォーム送信後、店舗にて在庫を確認し、確定のご連絡をいたします。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 支払い方法は何がありますか？</div>
+      <div>販売商品はStripeによるオンライン決済リンクをご利用いただけます。レンタルは店頭でのお支払いとなります。</div>
+    </div>
+  </section>
+
+  <footer id="access">
+    <div>
+      <div class="brand">SAGAMI 工具専門店</div>
+      <p>〒259-1114 神奈川県伊勢原市高森3-1-63</p>
+    </div>
+    <div>
+      <p>Instagram: @sagami502</p>
+      <p>営業時間 9:00–19:00 ／ 定休日 日曜（土曜も当面休業）</p>
+    </div>
+  </footer>
+
+</body>
+</html>
