@@ -489,7 +489,46 @@
   }
   .form-submit:hover{ background: var(--vermilion-deep); }
 
-  /* ---------- お知らせ ---------- */
+  /* ---------- Instagram ---------- */
+  .insta-section{
+    background: var(--cream);
+    padding: 60px 5% 70px;
+  }
+  .insta-head-row{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:14px;
+    margin-bottom: 10px;
+  }
+  .insta-follow{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--vermilion);
+    border: 2px solid var(--vermilion);
+    padding: 9px 20px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .insta-follow:hover{ background: var(--vermilion); color: var(--cream); }
+  .insta-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .insta-embed-wrap{
+    background:#fff;
+    border: 2px solid var(--ink);
+    box-shadow: 5px 5px 0 rgba(20,18,16,0.15);
+    overflow:hidden;
+    min-height: 420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .insta-embed-wrap iframe{ width:100%; border:none; }
   .news-section{
     background: var(--cream-dark);
     padding: 50px 5% 60px;
@@ -568,6 +607,13 @@
     content:" ★";
     color: var(--gold);
   }
+  .footer-insta{
+    display:inline-flex; align-items:center; gap:7px;
+    color: var(--steel-light);
+    transition: color .15s ease;
+  }
+  .footer-insta:hover{ color: var(--cream); }
+  .footer-insta svg{ width:15px; height:15px; flex-shrink:0; }
 
   @media (max-width:640px){
     nav{ display:none; }
@@ -584,6 +630,7 @@
       <a href="#sale">販売</a>
       <a href="#rental">レンタル</a>
       <a href="#news">お知らせ</a>
+      <a href="#instagram">Instagram</a>
       <a href="#faq">FAQ</a>
       <a href="#access">アクセス</a>
     </nav>
@@ -952,6 +999,38 @@
     });
   </script>
 
+  <!-- Instagram -->
+  <section class="insta-section" id="instagram">
+    <div class="insta-head-row">
+      <div class="section-head" style="margin-bottom:0; border-bottom:none;">
+        <span class="tag">INSTAGRAM</span>
+        <h2>最新の投稿</h2>
+      </div>
+      <a href="https://www.instagram.com/sagami502/" target="_blank" rel="noopener" class="insta-follow">
+        @sagami502 をフォロー →
+      </a>
+    </div>
+    <div class="insta-grid">
+      <!--
+        ▼▼ 実際のInstagram投稿に差し替える手順 ▼▼
+        1. Instagramで埋め込みたい投稿を開く
+        2. 投稿右上の「…」→「埋め込み」をクリック
+        3. 表示された埋め込みコード(<blockquote class="instagram-media">...</blockquote>)を
+           下の insta-embed-wrap 内、丸ごとコピー&ペーストで差し替える
+        4. 3枠とも同様に差し替えたら完了(埋め込みコードは自動でスタイル調整されます)
+      -->
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section id="faq">
     <div class="section-head">
@@ -974,7 +1053,12 @@
       <p>〒259-1114 神奈川県伊勢原市高森3-1-63</p>
     </div>
     <div>
-      <p>Instagram: @sagami502</p>
+      <p>
+        <a href="https://www.instagram.com/sagami502/" target="_blank" rel="noopener" class="footer-insta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>
+          @sagami502
+        </a>
+      </p>
       <p>営業時間 9:00–19:00 ／ 定休日 日曜（土曜も当面休業）</p>
     </div>
   </footer>
