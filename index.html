@@ -1,540 +1,2837 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>世界一の工具屋 - ハイエース荷室カスタム & プロツール</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具専門店Sagami｜伊勢原の工具 販売・レンタル・ハイエース荷室カスタム</title>
+<meta name="description" content="神奈川県伊勢原市の工具専門店Sagami。マキタなどプロ向け電動工具の販売・レンタル、ハイエース荷室のオーダーメイドカスタムまで。現場で使える一台を厳選してお届けします。">
+<meta name="theme-color" content="#2b2725">
+<meta property="og:type" content="website">
+<meta property="og:title" content="工具専門店Sagami｜販売・レンタル・ハイエース荷室カスタム">
+<meta property="og:description" content="伊勢原の工具専門店。プロ向け電動工具の販売・レンタル、ハイエース荷室のオーダーメイドカスタム。">
+<meta property="og:image" content="assets/logo-sagami.png">
+<meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "工具専門店Sagami",
+  "description": "プロ向け電動工具の販売・レンタル、ハイエース荷室のオーダーメイドカスタム",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "259-1114",
+    "addressRegion": "神奈川県",
+    "addressLocality": "伊勢原市",
+    "streetAddress": "高森3-1-63"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "sameAs": ["https://www.instagram.com/sagami502/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Oswald:wght@500;700&family=IBM+Plex+Mono:wght@400;700&family=Yellowtail&family=Shippori+Mincho+B1:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#2b2725;
+    --ink:#2b2725;
+    --vermilion:#b7382e;
+    --vermilion-deep:#8f281f;
+    --cream:#f4f2ee;
+    --cream-dark:#e7e2d8;
+    --steel:#4d4741;
+    --steel-light:#7a736a;
+    --gold:#c99a3f;
+    --neon:#e4f222;
+    --line-green:#06C755;
+    --font-display: 'Graduate', 'Shippori Mincho B1', 'Georgia', serif;
+    --font-display-jp: 'Shippori Mincho B1', 'Georgia', serif;
+    --font-head: 'Oswald', 'Arial Narrow', sans-serif;
+    --font-script: 'Yellowtail', cursive;
+    --font-body: 'Inter', 'Hiragino Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{ scroll-behavior: smooth; }
+  ::selection{ background: var(--vermilion); color: var(--cream); }
+  ::-webkit-scrollbar{ width: 11px; }
+  ::-webkit-scrollbar-track{ background: var(--cream-dark); }
+  ::-webkit-scrollbar-thumb{ background: var(--steel); border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover{ background: var(--vermilion); }
+  body{
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+    line-height:1.6;
+    position:relative;
+  }
+  body::after{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index:9999;
+    opacity:0.55;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .distress{
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.11' numOctaves='5' seed='7'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 .35 .75 1 1 1 1 1 1'/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='SourceGraphic'/%3E%3C/filter%3E%3Crect width='300' height='300' fill='black' filter='url(%23d)'/%3E%3C/svg%3E");
+    mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.11' numOctaves='5' seed='7'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 .35 .75 1 1 1 1 1 1'/%3E%3C/feComponentTransfer%3E%3CfeComposite operator='in' in2='SourceGraphic'/%3E%3C/filter%3E%3Crect width='300' height='300' fill='black' filter='url(%23d)'/%3E%3C/svg%3E");
+    -webkit-mask-size:300px 300px;
+    mask-size:300px 300px;
+  }
+  a{color:inherit; text-decoration:none;}
 
-  <!-- Google Fonts & GSAP Animation Library -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  .hazard{
+    height:12px;
+    background: repeating-linear-gradient(90deg,
+      var(--vermilion) 0 60px,
+      var(--cream) 60px 72px,
+      var(--black) 72px 132px,
+      var(--cream) 132px 144px);
+  }
 
-  <style>
-    :root {
-      --bg-dark: #121212;
-      --panel-dark: #1e1e1e;
-      --accent-yellow: #ffb703;
-      --accent-orange: #fb8500;
-      --text-light: #f8f9fa;
-      --text-dim: #a0a0a0;
-      --line-green: #06C755;
+  .scroll-progress{
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--neon);
+    z-index: 999;
+    transition: width .1s linear;
+  }
+
+  header{
+    background: var(--black);
+    color: var(--cream);
+    border-bottom: 3px solid var(--vermilion);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: box-shadow .3s ease;
+  }
+  header.scrolled{ box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+  header.scrolled .header-info{
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+  }
+  .header-top{
+    padding: 12px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .logo{
+    display:flex; align-items:center; gap:12px;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .logo img{
+    height: 52px;
+    width: auto;
+    display:block;
+  }
+  .logo span{color:var(--vermilion);}
+  nav{ display:flex; align-items:center; }
+  nav a{
+    margin-left: 26px;
+    font-size: 0.82rem;
+    font-family: var(--font-head);
+    font-weight:700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  nav a:hover{ color: var(--neon); }
+
+  .header-info{
+    background: var(--steel);
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    padding: 8px 5%;
+    display:flex; gap:28px; flex-wrap:wrap;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height .3s ease, padding .3s ease, opacity .3s ease;
+  }
+  .header-info b{color:var(--vermilion); margin-right:6px; font-family: var(--font-head);}
+
+  .hamburger{
+    display:none;
+    flex-direction: column;
+    justify-content:center;
+    gap: 5px;
+    width: 32px; height:32px;
+    background:none; border:none;
+    cursor:pointer;
+    padding:0;
+  }
+  .hamburger span{
+    display:block;
+    width:100%; height:2px;
+    background: var(--cream);
+  }
+  .hamburger.is-open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2){ opacity:0; }
+  .hamburger.is-open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+  .hd-strip{
+    background: var(--black);
+    color: var(--neon);
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-bottom: 2px solid var(--neon);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .hd-track{
+    display: inline-flex;
+    gap: 64px;
+    padding-right: 64px;
+    animation: marquee 26s linear infinite;
+    will-change: transform;
+  }
+  @keyframes marquee{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+
+  .hero{
+    background: var(--cream);
+    color: var(--ink);
+    padding: 70px 5% 60px;
+    position: relative;
+    overflow:hidden;
+    text-align:center;
+  }
+  .hero h1{
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7.5vw, 5.4rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: 0.03em;
+    color: var(--vermilion);
+    font-weight: 400;
+  }
+  .hero .script{
+    font-family: var(--font-script);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: var(--vermilion);
+    display:block;
+    margin: -4px 0 0;
+    transform: rotate(-4deg);
+    text-transform: none;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-art{
+    width: min(430px, 74vw);
+    margin: -6px auto -10px;
+    display:block;
+    color: var(--ink);
+    position: relative;
+    animation: driveIn 2.1s cubic-bezier(.2,.8,.3,1) both,
+               suspension 2.6s ease-in-out 2.1s infinite;
+  }
+  @keyframes driveIn{
+    0%{ transform: translateX(-160%) rotate(-3deg); opacity:0; }
+    70%{ transform: translateX(4%) rotate(1deg); opacity:1; }
+    85%{ transform: translateX(-2%) rotate(-0.5deg); }
+    100%{ transform: translateX(0) rotate(0); }
+  }
+  @keyframes suspension{
+    0%,100%{ transform: translateY(0) rotate(0deg); }
+    50%{ transform: translateY(-3px) rotate(0.4deg); }
+  }
+  .wheel{
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: wheelSpin 0.5s linear 4;
+  }
+  @keyframes wheelSpin{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(-360deg); }
+  }
+
+  .dust-wrap{
+    position:relative;
+    width: min(430px, 74vw);
+    height: 0;
+    margin: 0 auto;
+  }
+  .dust{
+    position:absolute;
+    bottom: 6px;
+    left: 6%;
+    width: 14px; height:14px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(122,115,106,0.55) 0%, rgba(122,115,106,0) 70%);
+    opacity:0;
+    animation: dustPuff 1.6s ease-out 2.0s;
+  }
+  .dust:nth-child(2){ left:10%; width:20px; height:20px; animation-delay:2.12s; }
+  .dust:nth-child(3){ left:2%;  width:10px; height:10px; animation-delay:2.2s; }
+  @keyframes dustPuff{
+    0%{ opacity:0; transform: translate(0,0) scale(0.4); }
+    15%{ opacity:0.8; }
+    100%{ opacity:0; transform: translate(-70px, -22px) scale(2.4); }
+  }
+
+  .fade-seq{ opacity:0; animation: fadeInUp .8s ease forwards; }
+  .hero h1.distress:first-of-type{ animation-delay: 2.25s; }
+  .hero .script{ animation-delay: 2.45s; }
+  .hero .sub-en{ animation-delay: 2.65s; }
+  .hero h1.distress:last-of-type{ animation-delay: 2.8s; }
+  .hero p{ animation-delay: 3.0s; }
+  .hero-cta{ animation-delay: 3.15s; }
+  @keyframes fadeInUp{
+    from{ opacity:0; transform: translateY(16px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+
+  .reveal{
+    opacity:0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .reveal.in-view{
+    opacity:1;
+    transform: translateY(0);
+  }
+  .grid .card.reveal:nth-child(2){ transition-delay: .1s; }
+  .grid .card.reveal:nth-child(3){ transition-delay: .2s; }
+  .grid .card.reveal:nth-child(4){ transition-delay: .3s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .hero-art, .fade-seq, .hero h1, .hero .script, .hero .sub-en, .hero p, .hero-cta, .reveal, .hd-track, .wheel{
+      animation: none !important;
+      transition: none !important;
+      opacity:1 !important;
+      transform:none !important;
     }
+  }
+  .hero .sub-en{
+    font-family: var(--font-head);
+    font-weight:700;
+    color: var(--vermilion);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    margin: 4px 0 6px;
+  }
+  .hero p{
+    margin: 26px auto 0;
+    max-width: 560px;
+    color: var(--steel);
+  }
+  .hero-cta{
+    margin-top: 32px;
+    display:flex; gap:16px; flex-wrap:wrap; justify-content:center;
+  }
+  .btn{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 15px 32px;
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+    border: 2px solid var(--vermilion);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn::after{
+    content:"→";
+    transition: transform .2s ease;
+  }
+  .btn:hover::after{ transform: translateX(5px); }
+  .btn-solid:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 6px 6px 0 var(--black);
+  }
+  .btn-outline:hover{ background: rgba(183,56,43,0.08); }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans JP', sans-serif;
+  .stats-bar{
+    background: var(--black);
+    border-top: 2px solid var(--vermilion);
+    border-bottom: 2px solid var(--vermilion);
+    padding: 34px 5%;
+  }
+  .stats-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    text-align:center;
+  }
+  .stat-item .stat-num{
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--neon);
+    line-height: 1.1;
+    display:block;
+  }
+  .stat-item .stat-label{
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--cream);
+    text-transform: uppercase;
+    margin-top: 8px;
+    display:block;
+  }
+  @media (max-width:640px){
+    .stats-inner{ grid-template-columns: 1fr; gap: 26px; }
+  }
+  .btn-solid{
+    background: var(--vermilion); color: var(--cream);
+    box-shadow: 4px 4px 0 var(--black);
+  }
+  .btn-outline{ color: var(--vermilion); }
+
+  section{ padding: 70px 5%; }
+  .section-head{
+    display:flex; flex-direction:column; align-items:flex-start; gap:10px;
+    margin-bottom: 44px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(34,30,26,0.14);
+    position:relative;
+  }
+  .section-head .tag{
+    display:inline-flex; align-items:center; gap:14px;
+    font-family: var(--font-head);
+    font-weight:700;
+    background: none;
+    color: var(--vermilion);
+    border: none;
+    padding: 0; font-size:0.76rem; letter-spacing:0.32em;
+    text-transform: uppercase;
+    transform: none;
+  }
+  .section-head .tag::before{
+    content:"";
+    width: 36px; height:2px;
+    background: var(--vermilion);
+  }
+  .section-head h2{
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.7rem, 4.2vw, 2.5rem);
+    text-transform: none;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  .section-sub{ color:var(--steel-light); font-size:0.82rem; margin-left:0; font-family: var(--font-mono);}
+
+  .pillars-section{
+    background: var(--cream);
+    padding: 80px 5%;
+  }
+  .pillars-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .pillar{
+    background: #fffdf7;
+    border: 2px solid var(--ink);
+    padding: 30px 24px 26px;
+    position: relative;
+    box-shadow: 5px 5px 0 rgba(20,18,16,0.14);
+    transition: transform .25s cubic-bezier(.2,.8,.3,1), box-shadow .25s cubic-bezier(.2,.8,.3,1), border-color .25s ease;
+    display:block;
+  }
+  @media (hover: hover){
+    .pillar:hover{
+      transform: translate(-3px,-6px);
+      box-shadow: 10px 12px 0 rgba(183,56,43,0.22);
+      border-color: var(--vermilion);
     }
+  }
+  .pillar .pl-num{
+    position:absolute; top:14px; right:16px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--steel-light);
+    letter-spacing: 0.1em;
+  }
+  .pillar svg{
+    width: 46px; height: 46px;
+    color: var(--vermilion);
+    margin-bottom: 16px;
+    transition: transform .3s ease;
+  }
+  .pillar:hover svg{ transform: rotate(-6deg) scale(1.1); }
+  .pillar h3{
+    font-family: var(--font-display-jp);
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .pillar p{
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--steel);
+  }
+  .pillar .pl-arrow{
+    display:inline-block;
+    margin-top: 14px;
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--vermilion);
+    text-transform: uppercase;
+  }
+  @media (max-width:900px){
+    .pillars-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width:560px){
+    .pillars-grid{ grid-template-columns: 1fr; }
+  }
 
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-      overflow-x: hidden;
+  .product-search{
+    margin-bottom: 22px;
+    display:flex;
+    gap: 0;
+    max-width: 520px;
+  }
+  .product-search input{
+    flex:1;
+    padding: 13px 16px;
+    border: 2px solid var(--ink);
+    border-right: none;
+    background: #fffdf7;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color .2s ease;
+  }
+  .product-search input:focus{ border-color: var(--vermilion); }
+  .product-search .ps-icon{
+    display:flex; align-items:center; justify-content:center;
+    width: 52px;
+    background: var(--ink);
+    color: var(--neon);
+    border: 2px solid var(--ink);
+  }
+  .product-search .ps-icon svg{ width:20px; height:20px; }
+  .no-results{
+    font-family: var(--font-mono);
+    color: var(--steel-light);
+    font-size: 0.85rem;
+    padding: 26px 0;
+    display:none;
+  }
+  .card.filtered-out{ display:none; }
+  .sort-bar a, .chip{ cursor: pointer; user-select:none; }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 22px;
+  }
+  .card{
+    background: #fffdf7;
+    border: 2px solid var(--ink);
+    position: relative;
+    box-shadow: 5px 5px 0 rgba(20,18,16,0.18);
+    transition: transform .25s cubic-bezier(.2,.8,.3,1), box-shadow .25s cubic-bezier(.2,.8,.3,1);
+  }
+  @media (hover: hover){
+    .card:hover{ transform: translate(-3px,-6px); box-shadow: 10px 12px 0 rgba(20,18,16,0.2); }
+  }
+  .card::before{
+    content:"";
+    position:absolute; top:12px; left:50%;
+    transform: translateX(-50%);
+    width:14px; height:14px;
+    border-radius:50%;
+    background: var(--cream);
+    box-shadow: inset 0 0 0 3px var(--ink);
+    z-index:2;
+  }
+  .card-img{
+    height:150px;
+    background:
+      repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,0.02) 12px 24px),
+      linear-gradient(160deg, #2c2824 0%, var(--black) 100%);
+    background-color: var(--black);
+    display:flex; align-items:center; justify-content:center;
+    border-bottom: 2px dashed var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .card-img svg{
+    width: 62%;
+    max-height: 78%;
+    transition: transform .35s ease;
+  }
+  .card:hover .card-img svg{ transform: scale(1.08) rotate(-2deg); }
+  .card-body{ padding: 18px 16px 16px; }
+  .card-id{
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--steel-light);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .card-name{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 1.1rem;
+    margin: 6px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .card-price{
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--vermilion);
+  }
+  .card-stock{
+    display:inline-block;
+    margin-top:8px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    background: var(--cream);
+    border: 1px solid var(--steel-light);
+  }
+  .card-stock.ok{ border-color:#3b8f4c; color:#3b8f4c; }
+  .card-stock.low{ border-color:var(--vermilion-deep); color:var(--vermilion-deep); }
+  .card-buy{
+    display:block; text-align:center;
+    margin-top:14px;
+    background: var(--black); color: var(--cream);
+    font-family: var(--font-head); font-weight:700; font-size:0.85rem;
+    text-transform: uppercase; letter-spacing:0.08em;
+    padding: 11px;
+    box-shadow: 3px 3px 0 var(--vermilion);
+  }
+  .card-buy:hover{ background: var(--vermilion); box-shadow: 3px 3px 0 var(--black); }
+  .spec-tags{
+    display:flex; flex-wrap:wrap; gap:6px;
+    margin: 10px 0 4px;
+  }
+  .spec-tag{
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--steel);
+    background: var(--cream);
+    border: 1px solid #ddd8cc;
+    padding: 3px 7px;
+  }
+  .ship-badge{
+    display:inline-flex; align-items:center; gap:4px;
+    font-family: var(--font-mono); font-size:0.65rem;
+    color:#3b8f4c; margin-top:8px;
+  }
+  .ship-badge::before{ content:"●"; font-size:0.5rem; }
+
+  .toolbar{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:14px;
+    margin-bottom: 24px;
+  }
+  .sort-bar{
+    display:flex; gap:0;
+    font-family: var(--font-mono); font-size: 0.78rem;
+  }
+  .sort-bar a{
+    padding: 7px 14px;
+    border: 1px solid var(--black);
+    border-left: none;
+    color: var(--black);
+  }
+  .sort-bar a:first-child{ border-left: 1px solid var(--black); }
+  .sort-bar a.active{ background: var(--black); color: var(--vermilion); }
+
+  .filter-chips{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-bottom: 28px;
+  }
+  .chip{
+    font-family: var(--font-mono); font-size: 0.75rem;
+    padding: 6px 14px;
+    border: 1px solid var(--steel-light);
+    color: var(--steel);
+    background:#fff;
+  }
+  .chip.active{
+    background: var(--vermilion);
+    border-color: var(--vermilion);
+    color: var(--black);
+    font-weight:700;
+  }
+
+  .rental-section{
+    background:
+      repeating-linear-gradient(90deg, transparent 0 80px, rgba(200,52,42,0.05) 80px 82px),
+      var(--black);
+    color: var(--cream);
+  }
+  .rental-section .section-head{ border-bottom-color: rgba(244,242,238,0.16); }
+  .rental-section .section-head .tag{ color: var(--gold); }
+  .rental-section .section-head .tag::before{ background: var(--gold); }
+  .rental-section .section-head h2{ color: var(--cream); }
+  .rental-section .section-sub{ color: var(--steel-light); }
+
+  .rental-card{
+    background: #201c18;
+    border-color: var(--gold);
+    box-shadow: 5px 5px 0 rgba(201,154,63,0.15);
+  }
+  .rental-card::before{ background: var(--black); box-shadow: inset 0 0 0 3px var(--gold); }
+  .rental-card .card-img{ border-bottom-color: var(--gold); }
+  .rental-card .card-name{ color: var(--cream); }
+  .avail-row{
+    display:flex; gap:4px; margin-top:12px; flex-wrap:wrap;
+  }
+  .avail-day{
+    width: 26px; height:26px;
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--font-mono); font-size:0.65rem;
+    background: #3b8f4c; color:#fff;
+  }
+  .avail-day.full{ background: var(--vermilion); }
+  .avail-legend{
+    font-family: var(--font-mono); font-size:0.7rem;
+    color: var(--steel-light); margin-top:10px;
+  }
+  .rental-btn{
+    display:block; text-align:center; margin-top:14px;
+    background: var(--gold); color: var(--black);
+    font-family: var(--font-head); font-weight:700; font-size:0.85rem;
+    text-transform: uppercase; letter-spacing:0.08em;
+    padding: 11px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+  }
+
+  .form-section{
+    background: var(--cream);
+  }
+  .form-wrap{
+    max-width: 640px;
+    background:#fffdf7;
+    border: 3px solid var(--ink);
+    box-shadow: 8px 8px 0 rgba(20,18,16,0.15);
+    padding: 32px;
+  }
+  .form-row{ margin-bottom:18px; }
+  .form-row label{
+    display:block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing:0.05em;
+    margin-bottom:6px;
+    color: var(--steel);
+  }
+  .form-row input, .form-row select, .form-row textarea{
+    width:100%;
+    padding: 11px 13px;
+    border: 1px solid var(--steel-light);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    background: var(--cream);
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .form-row input:focus, .form-row select:focus, .form-row textarea:focus{
+    outline: none;
+    border-color: var(--vermilion);
+    box-shadow: 3px 3px 0 rgba(183,56,43,0.25);
+  }
+
+  .back-to-top{
+    position: fixed;
+    right: 22px; bottom: 22px;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: var(--black);
+    border: 2px solid var(--vermilion);
+    color: var(--neon);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(14px);
+    transition: opacity .3s ease, transform .3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  }
+  .back-to-top.show{ opacity:1; pointer-events:auto; transform: translateY(0); }
+  .back-to-top svg{ width: 24px; height: 24px; transition: transform .6s ease; }
+  .back-to-top:hover svg{ transform: rotate(180deg); }
+
+  .add-quote{
+    display:block; width:100%;
+    margin-top:8px;
+    background:none;
+    border: 2px dashed var(--steel-light);
+    color: var(--steel);
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    padding: 9px;
+    cursor:pointer;
+    transition: border-color .2s ease, color .2s ease, background .2s ease;
+  }
+  .add-quote:hover{ border-color: var(--vermilion); color: var(--vermilion); }
+  .add-quote.added{
+    border-style: solid;
+    border-color: #3b8f4c;
+    color: #3b8f4c;
+    background: rgba(59,143,76,0.07);
+  }
+
+  .cart-fab{
+    position: fixed;
+    left: 22px; bottom: 22px;
+    display:flex; align-items:center; gap:10px;
+    background: var(--vermilion);
+    color: var(--cream);
+    border: none;
+    padding: 14px 20px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    z-index: 300;
+    box-shadow: 4px 4px 0 var(--black);
+    transform: translateY(90px);
+    transition: transform .35s cubic-bezier(.2,.8,.3,1);
+  }
+  .cart-fab.show{ transform: translateY(0); }
+  .cart-fab .cf-badge{
+    background: var(--cream);
+    color: var(--vermilion);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    min-width: 24px; height: 24px;
+    border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+    font-weight: 700;
+  }
+
+  .cart-drawer{
+    position: fixed;
+    right: 0; top: 0; bottom: 0;
+    width: min(400px, 92vw);
+    background: #fffdf7;
+    border-left: 3px solid var(--ink);
+    z-index: 400;
+    transform: translateX(105%);
+    transition: transform .4s cubic-bezier(.2,.8,.3,1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -12px 0 40px rgba(0,0,0,0.25);
+  }
+  .cart-drawer.open{ transform: translateX(0); }
+  .cart-head{
+    background: var(--black);
+    color: var(--cream);
+    padding: 18px 22px;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .cart-head h4{
+    font-family: var(--font-head);
+    font-weight:700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+  }
+  .cart-close{
+    background:none; border:none; color:var(--cream);
+    font-size: 1.5rem; cursor:pointer; line-height:1;
+  }
+  .cart-items{
+    flex:1;
+    overflow-y:auto;
+    padding: 16px 22px;
+  }
+  .cart-item{
+    display:flex; justify-content:space-between; align-items:center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px dashed #d8d0c0;
+  }
+  .cart-item .ci-name{ font-size: 0.88rem; font-weight: 600; }
+  .cart-item .ci-price{ font-family: var(--font-mono); font-size: 0.82rem; color: var(--vermilion); }
+  .cart-item .ci-remove{
+    background:none; border:1px solid var(--steel-light);
+    color: var(--steel-light);
+    font-size: 0.7rem; padding: 4px 9px; cursor:pointer;
+    font-family: var(--font-mono);
+  }
+  .cart-item .ci-remove:hover{ border-color: var(--vermilion); color: var(--vermilion); }
+  .cart-empty{
+    font-family: var(--font-mono);
+    color: var(--steel-light);
+    font-size: 0.85rem;
+    text-align:center;
+    padding: 40px 0;
+  }
+  .cart-foot{
+    border-top: 2px solid var(--ink);
+    padding: 18px 22px;
+  }
+  .cart-total{
+    display:flex; justify-content:space-between;
+    font-family: var(--font-head); font-weight:700;
+    margin-bottom: 14px;
+  }
+  .cart-total .ct-amount{ font-family: var(--font-display); color: var(--vermilion); font-size: 1.3rem; }
+  .cart-send{
+    width:100%;
+    background: var(--vermilion); color: var(--cream);
+    border:none; padding: 14px;
+    font-family: var(--font-head); font-weight:700;
+    font-size: 0.9rem; letter-spacing: 0.08em;
+    cursor:pointer;
+    box-shadow: 3px 3px 0 var(--black);
+    transition: transform .2s ease;
+  }
+  .cart-send:hover{ transform: translate(-2px,-2px); }
+  .cart-note{
+    font-size: 0.72rem; color: var(--steel-light);
+    margin-top: 10px; line-height:1.6;
+    font-family: var(--font-mono);
+  }
+
+  .lightbox{
+    position: fixed; inset: 0;
+    background: rgba(20,17,15,0.92);
+    z-index: 500;
+    display:none;
+    align-items:center; justify-content:center;
+    padding: 4vw;
+    cursor: zoom-out;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{
+    max-width: 100%; max-height: 100%;
+    border: 3px solid var(--gold);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  }
+  .lightbox .lb-caption{
+    position: absolute;
+    bottom: 3vh; left: 50%;
+    transform: translateX(-50%);
+    color: var(--cream);
+    font-family: var(--font-head);
+    font-weight:700;
+    letter-spacing: 0.1em;
+    background: rgba(20,17,15,0.8);
+    padding: 8px 18px;
+  }
+  .custom-photo{ cursor: zoom-in; }
+
+  .intro{
+    position: fixed; inset: 0;
+    background: var(--black);
+    z-index: 1000;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    gap: 22px;
+    transition: transform .7s cubic-bezier(.7,0,.3,1);
+    cursor: pointer;
+  }
+  .intro.done{ transform: translateY(-101%); }
+  .intro.gone{ display:none; }
+  .intro img{
+    width: 130px;
+    animation: introStamp .9s cubic-bezier(.2,1.2,.4,1) both .2s;
+  }
+  @keyframes introStamp{
+    0%{ transform: scale(2.4) rotate(-8deg); opacity:0; }
+    60%{ transform: scale(0.94) rotate(1deg); opacity:1; }
+    100%{ transform: scale(1) rotate(0); opacity:1; }
+  }
+  .intro-text{
+    font-family: var(--font-head);
+    font-weight:700;
+    color: var(--cream);
+    letter-spacing: 0.5em;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    opacity:0;
+    animation: fadeInUp .7s ease forwards 1.0s;
+  }
+  .intro-bar{
+    width: 180px; height: 2px;
+    background: rgba(244,242,238,0.15);
+    overflow:hidden;
+    position:relative;
+  }
+  .intro-bar::after{
+    content:"";
+    position:absolute; left:0; top:0; bottom:0;
+    width:100%;
+    background: var(--neon);
+    transform: translateX(-100%);
+    animation: introBar 1.5s cubic-bezier(.4,0,.2,1) forwards 1.1s;
+  }
+  @keyframes introBar{ to{ transform: translateX(0); } }
+
+  .giant-marquee{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 54px;
+    pointer-events:none;
+    user-select:none;
+  }
+  .gm-track{
+    display:inline-flex;
+    gap: 40px;
+    animation: marquee 32s linear infinite;
+    will-change: transform;
+  }
+  .gm-track span{
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(201,154,63,0.35);
+    letter-spacing: 0.04em;
+  }
+
+  #sale .grid{ perspective: 1000px; }
+  #sale .card{ transform-style: preserve-3d; will-change: transform; }
+
+  .hero h1 .ch{
+    display:inline-block;
+    transition: transform .22s cubic-bezier(.2,1.6,.4,1), color .22s ease;
+  }
+  .hero h1 .ch:hover{
+    transform: translateY(-9px) rotate(-5deg);
+    color: var(--ink);
+  }
+
+  /* 荷室カスタム・シミュレーター */
+  .sim-wrap{
+    max-width: 1180px;
+    margin: 70px auto 0;
+    padding: 0 5%;
+  }
+  .sim-panel{
+    background: #201c18;
+    border: 2px solid var(--gold);
+    box-shadow: 8px 8px 0 rgba(201,154,63,0.15);
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    overflow: hidden;
+  }
+  .sim-van{
+    padding: 30px;
+    display:flex; align-items:center; justify-content:center;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 34px, rgba(201,154,63,0.06) 34px 35px),
+      repeating-linear-gradient(90deg, transparent 0 34px, rgba(201,154,63,0.06) 34px 35px);
+  }
+  .sim-van svg{ width: 100%; max-width: 460px; }
+  
+  /* パーツのアニメーション表示処理 */
+  .sim-part{
+    opacity: 0;
+    transition: opacity .4s ease, transform .4s ease;
+    transform-origin: center;
+  }
+  .sim-part.on{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .sim-controls{
+    padding: 28px 26px;
+    border-left: 2px dashed rgba(201,154,63,0.4);
+    display:flex; flex-direction:column;
+  }
+  .sim-controls .sc-kicker{
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .sim-controls h3{
+    font-family: var(--font-display-jp);
+    font-weight: 800;
+    color: var(--cream);
+    font-size: 1.3rem;
+    margin: 8px 0 18px;
+  }
+  .sim-opts{
+    display:flex; flex-direction:column; gap: 8px;
+    margin-bottom: 20px;
+  }
+  .sim-opt{
+    display:flex; justify-content:space-between; align-items:center;
+    background: none;
+    border: 1px solid rgba(244,242,238,0.25);
+    color: var(--cream);
+    padding: 11px 14px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border-color .2s ease, background .2s ease;
+    text-align: left;
+  }
+  .sim-opt .so-price{
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--steel-light);
+  }
+  .sim-opt::before{
+    content:"＋";
+    margin-right: 10px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .sim-opt.on{
+    border-color: var(--neon);
+    background: rgba(228,242,34,0.08);
+  }
+  .sim-opt.on::before{ content:"✓"; color: var(--neon); }
+  .sim-opt.on .so-price{ color: var(--neon); }
+
+  .sim-total-row{
+    border-top: 2px solid rgba(201,154,63,0.4);
+    padding-top: 16px;
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom: 14px;
+  }
+  .sim-total-row .st-label{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    color: var(--cream);
+    text-transform: uppercase;
+  }
+  .sim-total{
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    color: var(--neon);
+  }
+  .sim-cta{
+    background: var(--vermilion); color: var(--cream);
+    border:none; padding: 13px;
+    font-family: var(--font-head); font-weight:700;
+    font-size: 0.88rem; letter-spacing: 0.08em;
+    cursor:pointer;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+    transition: transform .2s ease;
+  }
+  .sim-cta:hover{ transform: translate(-2px,-2px); }
+  
+  /* 追加: LINE見積り送信ボタン */
+  .sim-line-cta{
+    background: var(--line-green); color: #ffffff;
+    border:none; padding: 13px;
+    font-family: var(--font-head); font-weight:700;
+    font-size: 0.88rem; letter-spacing: 0.08em;
+    cursor:pointer;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+    transition: transform .2s ease;
+    margin-top: 8px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .sim-line-cta:hover{ transform: translate(-2px,-2px); }
+
+  .sim-note{
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--steel-light);
+    margin-top: 10px;
+    line-height: 1.7;
+  }
+  @media (max-width: 820px){
+    .sim-panel{ grid-template-columns: 1fr; }
+    .sim-controls{ border-left:none; border-top: 2px dashed rgba(201,154,63,0.4); }
+  }
+
+  .open-badge{
+    display:inline-flex; align-items:center; gap:7px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    padding: 2px 10px;
+    border: 1px solid;
+  }
+  .open-badge .ob-dot{
+    width: 7px; height: 7px; border-radius: 50%;
+    background: currentColor;
+  }
+  .open-badge.is-open{
+    color: #5ad06e;
+    border-color: #5ad06e;
+  }
+  .open-badge.is-open .ob-dot{ animation: obPulse 1.6s ease-in-out infinite; }
+  .open-badge.is-closed{
+    color: var(--steel-light);
+    border-color: var(--steel-light);
+  }
+  @keyframes obPulse{
+    0%,100%{ box-shadow: 0 0 0 0 rgba(90,208,110,0.6); }
+    50%{ box-shadow: 0 0 0 5px rgba(90,208,110,0); }
+  }
+
+  .hero-art{ cursor: pointer; }
+  #hl-flash{ opacity: 0; }
+  .hero-art.honk #hl-flash{ animation: hlBlink .5s steps(2) 2; }
+  @keyframes hlBlink{
+    0%,100%{ opacity: 0; }
+    50%{ opacity: 1; }
+  }
+  .form-two{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .form-submit{
+    background: var(--vermilion); color: var(--cream);
+    border:none; padding: 15px 34px;
+    font-family: var(--font-head); font-weight:700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing:0.1em; cursor:pointer;
+    box-shadow: 4px 4px 0 var(--black);
+  }
+  .form-submit:hover{ background: var(--vermilion-deep); }
+
+  .custom-section{
+    background:
+      radial-gradient(ellipse at 20% 0%, #2a2622 0%, var(--black) 55%);
+    color: var(--cream);
+    padding: 0 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .custom-section::before{
+    content:"";
+    position:absolute; top:0; left:0; right:0; height:6px;
+    background: repeating-linear-gradient(90deg,
+      var(--vermilion) 0 30px, var(--cream) 30px 36px,
+      var(--black) 36px 66px, var(--cream) 66px 72px);
+    z-index: 3;
+  }
+
+  .custom-hero{
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px 5% 50px;
+    overflow: hidden;
+  }
+  .custom-hero-bg{
+    position: absolute; inset: 0;
+    z-index: 0;
+  }
+  .custom-hero-bg img{
+    width:100%; height:100%; object-fit: cover;
+    object-position: center 40%;
+  }
+  .custom-hero-bg::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg,
+      rgba(20,17,15,0.55) 0%,
+      rgba(20,17,15,0.35) 40%,
+      rgba(20,17,15,0.92) 100%);
+  }
+  .custom-hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .custom-kicker{
+    display:inline-flex; align-items:center; gap:12px;
+    font-family: var(--font-head);
+    font-weight:700;
+    color: var(--neon);
+    letter-spacing: 0.3em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .custom-kicker::before{
+    content:"";
+    width: 40px; height:2px;
+    background: var(--neon);
+  }
+  .custom-hero h2{
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 6vw, 4.4rem);
+    line-height: 1.02;
+    color: var(--cream);
+    letter-spacing: 0.01em;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+    margin-bottom: 22px;
+  }
+  .custom-hero h2 em{
+    font-family: var(--font-script);
+    font-style: normal;
+    color: var(--vermilion);
+    font-size: 1.15em;
+    display:inline-block;
+    transform: rotate(-3deg);
+  }
+  .custom-hero-lead{
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #e8e0d4;
+    max-width: 560px;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+  }
+  .custom-hero .btn{ box-shadow: 4px 4px 0 rgba(0,0,0,0.5); }
+
+  .custom-process{
+    max-width: 1180px;
+    margin: 60px auto 0;
+    padding: 0 5%;
+  }
+  .custom-process-head{
+    text-align:center;
+    margin-bottom: 44px;
+  }
+  .custom-process-head .ph-kicker{
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .custom-process-head h3{
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    color: var(--cream);
+    margin-top: 10px;
+  }
+  .process-steps{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    counter-reset: step;
+  }
+  .process-step{
+    position: relative;
+    padding-top: 24px;
+    border-top: 2px solid rgba(201,154,63,0.4);
+  }
+  .process-step .step-num{
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    color: var(--vermilion);
+    line-height: 1;
+    display:block;
+    margin-bottom: 12px;
+  }
+  .process-step h4{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 1.05rem;
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  .process-step p{
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #b3a89c;
+  }
+
+  .custom-gallery-wrap{
+    max-width: 1180px;
+    margin: 64px auto 0;
+    padding: 0 5%;
+  }
+  .custom-gallery-head{
+    display:flex; align-items:baseline; gap:16px;
+    margin-bottom: 26px;
+    border-bottom: 2px solid rgba(244,242,238,0.15);
+    padding-bottom: 14px;
+  }
+  .custom-gallery-head h3{
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--cream);
+  }
+  .custom-gallery-head span{
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-left:auto;
+  }
+  .custom-gallery{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .custom-photo{
+    aspect-ratio: 4/5;
+    background: linear-gradient(150deg, #3a3229 0%, #1c1815 100%);
+    position:relative;
+    overflow: hidden;
+    border: 1px solid rgba(201,154,63,0.3);
+  }
+  .custom-photo img{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+  }
+  .custom-photo:hover img{ transform: scale(1.06); }
+  .custom-photo .cp-label{
+    position: absolute;
+    bottom: 0; left:0; right:0;
+    background: linear-gradient(180deg, transparent, rgba(20,17,15,0.9));
+    color: var(--cream);
+    font-family: var(--font-head);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    padding: 30px 16px 14px;
+    z-index: 2;
+  }
+  .custom-photo .cp-num{
+    position:absolute; top:12px; left:12px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--neon);
+    background: rgba(20,17,15,0.7);
+    padding: 3px 8px;
+    z-index: 2;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 800px){
+    .process-steps{ grid-template-columns: repeat(2, 1fr); gap: 28px 22px; }
+    .custom-gallery{ grid-template-columns: 1fr; }
+    .custom-hero{ min-height: 480px; }
+  }
+
+  .insta-section{
+    background: var(--cream);
+    padding: 60px 5% 70px;
+  }
+  .insta-head-row{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:14px;
+    margin-bottom: 10px;
+  }
+  .insta-follow{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--vermilion);
+    border: 2px solid var(--vermilion);
+    padding: 9px 20px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .insta-follow:hover{ background: var(--vermilion); color: var(--cream); }
+  .insta-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .insta-embed-wrap{
+    background:#fff;
+    border: 2px solid var(--ink);
+    box-shadow: 5px 5px 0 rgba(20,18,16,0.15);
+    overflow:hidden;
+    min-height: 420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .insta-embed-wrap iframe{ width:100%; border:none; }
+  .news-section{
+    background: var(--cream-dark);
+    padding: 50px 5% 60px;
+  }
+  .news-list{
+    max-width: 780px;
+  }
+  .news-item{
+    display:flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 18px 4px;
+    border-bottom: 1px solid #cfc5b0;
+    flex-wrap: wrap;
+    transition: background .2s ease, padding-left .2s ease;
+  }
+  .news-item:hover{ background: rgba(183,56,43,0.05); padding-left: 12px; }
+  .news-item:first-child{ border-top: 1px solid #cfc5b0; }
+  .news-date{
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--steel-light);
+    min-width: 90px;
+  }
+  .news-tag{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: var(--vermilion);
+    border: 1px solid var(--vermilion);
+    padding: 2px 9px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .news-title{
+    font-size: 0.92rem;
+    color: var(--ink);
+    flex: 1;
+    min-width: 200px;
+  }
+  .news-title a{ border-bottom: 1px solid transparent; }
+  .news-title a:hover{ border-bottom-color: var(--vermilion); color: var(--vermilion); }
+  .news-empty{
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--steel-light);
+    padding: 20px 0;
+  }
+  .faq-item{
+    border-bottom: 1px solid #ddd8cc;
+    padding: 22px 4px;
+    display: flex;
+    gap: 18px;
+    transition: background .2s ease;
+  }
+  .faq-item:hover{ background: rgba(183,56,43,0.04); }
+  .faq-item .faq-num{
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--vermilion);
+    opacity: 0.5;
+    flex-shrink:0;
+    line-height:1;
+  }
+  .faq-q{
+    font-family: var(--font-head);
+    font-weight:700;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  footer{
+    background: var(--black);
+    color: var(--steel-light);
+    padding: 56px 5% 32px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    border-top: 4px solid var(--vermilion);
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(244,242,238,0.12);
+  }
+  .footer-col h5{
+    font-family: var(--font-head);
+    font-weight:700;
+    color: var(--cream);
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .footer-col a{
+    display:block;
+    padding: 5px 0;
+    color: var(--steel-light);
+  }
+  .footer-col a:hover{ color: var(--neon); }
+  .footer-bottom{
+    max-width: 1180px;
+    margin: 20px auto 0;
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:12px;
+    font-size: 0.72rem;
+    color: #6b645c;
+  }
+  footer .brand{
+    color: var(--cream);
+    font-family: var(--font-display);
+    font-size:1.15rem;
+    text-transform:uppercase;
+    display:flex; align-items:center; gap:10px;
+  }
+  footer .brand img{ height:34px; width:auto; }
+  footer .brand::after{
+    content:" ★";
+    color: var(--gold);
+  }
+  .footer-insta{
+    display:inline-flex; align-items:center; gap:7px;
+    color: var(--steel-light);
+    transition: color .15s ease;
+  }
+  .footer-insta:hover{ color: var(--cream); }
+  .footer-insta svg{ width:15px; height:15px; flex-shrink:0; }
+
+  @media (max-width:640px){
+    nav{
+      display:none;
+      position:absolute;
+      top:100%; left:0; right:0;
+      background: var(--black);
+      flex-direction:column;
+      align-items:flex-start;
+      padding: 8px 5% 16px;
+      border-bottom: 3px solid var(--vermilion);
     }
-
-    /* ヒーローセクション (GSAP連動) */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: radial-gradient(circle at center, #2a2a2a 0%, var(--bg-dark) 70%);
-      position: relative;
+    nav.is-open{ display:flex; }
+    nav a{
+      margin-left:0;
+      padding: 10px 0;
+      width:100%;
+      border-bottom: 1px solid rgba(244,242,238,0.1);
     }
-
-    .hero h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.5rem, 6vw, 5rem);
-      font-weight: 900;
-      color: var(--accent-yellow);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 20px rgba(255, 183, 3, 0.3);
+    .hamburger{ display:flex; }
+    .header-info{
+      flex-direction:column;
+      gap:4px;
     }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-dim);
-      margin-bottom: 2rem;
-    }
-
-    /* メインコンテナ */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      border-left: 6px solid var(--accent-yellow);
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-      color: var(--text-light);
-    }
-
-    /* 荷室シミュレーターグリッド */
-    .sim-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      background: var(--panel-dark);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid #333;
-    }
-
-    @media (max-width: 768px) {
-      .sim-grid { grid-template-columns: 1fr; }
-    }
-
-    /* SVGビジュアル表示領域 */
-    .sim-visual {
-      background: #0a0a0a;
-      border-radius: 8px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hiace-svg {
-      width: 100%;
-      height: auto;
-      max-height: 350px;
-    }
-
-    /* 動的パーツのデフォルトスタイル */
-    .part-item {
-      opacity: 0.15;
-      transition: all 0.4s ease;
-      transform-origin: center;
-    }
-
-    .part-item.active {
-      opacity: 1;
-      filter: drop-shadow(0 0 8px var(--accent-yellow));
-    }
-
-    /* シミュレーターコントロール */
-    .sim-controls {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .sim-opt {
-      background: #2a2a2a;
-      border: 2px solid #444;
-      color: var(--text-light);
-      padding: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-      transition: all 0.2s;
-    }
-
-    .sim-opt:hover {
-      border-color: var(--accent-yellow);
-    }
-
-    .sim-opt.on {
-      border-color: var(--accent-yellow);
-      background: rgba(255, 183, 3, 0.1);
-      color: var(--accent-yellow);
-    }
-
-    .sim-summary {
-      margin-top: 1.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid #444;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 1.4rem;
-    }
-
-    .sim-total-price {
-      color: var(--accent-yellow);
-      font-weight: 900;
-      font-size: 1.8rem;
-    }
-
-    .btn-action {
-      display: block;
-      width: 100%;
-      padding: 1rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      margin-top: 1rem;
-      transition: transform 0.2s, opacity 0.2s;
-    }
-
-    .btn-action:active { transform: scale(0.98); }
-    .btn-line { background: var(--line-green); color: white; }
-    .btn-submit { background: var(--accent-orange); color: white; }
-
-    /* 在庫・予約データ連携セクション */
-    .stock-section {
-      margin-top: 4rem;
-      background: var(--panel-dark);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid #333;
-    }
-
-    .stock-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .stock-card {
-      background: #2a2a2a;
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 4px solid var(--accent-yellow);
-    }
-
-    .stock-status {
-      display: inline-block;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-    }
-
-    .status-ok { background: #2e7d32; color: white; }
-    .status-low { background: #c62828; color: white; }
-
-    /* モーダルフォーム */
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: var(--text-dim);
-    }
-
-    .form-group input, .form-group select {
-      width: 100%;
-      padding: 0.8rem;
-      background: #121212;
-      border: 1px solid #444;
-      color: white;
-      border-radius: 6px;
-    }
-  </style>
+    .form-two{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns: 1fr; gap:28px; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- GSAPアニメーション：ヒーロー -->
-  <section class="hero">
-    <h1 id="hero-title">NO TOOL, NO LIFE.</h1>
-    <p id="hero-sub">世界一の工具と、最強のハイエース荷室をつくる。</p>
-  </section>
-
-  <div class="container">
-    
-    <!-- 1. 荷室シミュレーター -->
-    <h2 class="section-title">ハイエース荷室カスタム シミュレーター</h2>
-    <div class="sim-grid">
-      
-      <!-- SVG描画領域 -->
-      <div class="sim-visual">
-        <svg class="hiace-svg" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- ハイエース車体フレーム外観 -->
-          <rect x="50" y="50" width="500" height="180" rx="20" stroke="#555" stroke-width="4" fill="#181818" />
-          <path d="M 50 180 L 550 180" stroke="#333" stroke-width="2" />
-          <circle cx="120" cy="240" r="25" fill="#333" stroke="#666" stroke-width="4"/>
-          <circle cx="480" cy="240" r="25" fill="#333" stroke="#666" stroke-width="4"/>
-          
-          <!-- 動的パーツ（初期は半透明・非アクティブ） -->
-          <!-- 床張りウッドパネル -->
-          <rect id="svg-floor" class="part-item" x="70" y="210" width="420" height="15" fill="#d4a373" />
-          
-          <!-- ヘビーデューティー棚 -->
-          <g id="svg-rack" class="part-item">
-            <rect x="80" y="90" width="120" height="120" fill="#4a5568" stroke="#cbd5e0" stroke-width="2"/>
-            <line x1="80" y1="130" x2="200" y2="130" stroke="#cbd5e0" stroke-width="2"/>
-            <line x1="80" y1="170" x2="200" y2="170" stroke="#cbd5e0" stroke-width="2"/>
-          </g>
-
-          <!-- 天井LEDライティング -->
-          <g id="svg-led" class="part-item">
-            <line x1="80" y1="65" x2="480" y2="65" stroke="#ffb703" stroke-width="6" stroke-linecap="round"/>
-            <polygon points="100,68 120,150 80,150" fill="rgba(255,183,3,0.15)"/>
-            <polygon points="280,68 300,150 260,150" fill="rgba(255,183,3,0.15)"/>
-            <polygon points="440,68 460,150 420,150" fill="rgba(255,183,3,0.15)"/>
-          </g>
-
-          <!-- 100V 電源ポータブルバッテリーユニット -->
-          <g id="svg-power" class="part-item">
-            <rect x="400" y="150" width="80" height="60" rx="5" fill="#e63946"/>
-            <circle cx="420" cy="170" r="6" fill="#fff"/>
-            <circle cx="440" cy="170" r="6" fill="#fff"/>
-          </g>
-        </svg>
-      </div>
-
-      <!-- コントロールパネル -->
-      <div class="sim-controls">
-        <div class="sim-opt" data-part="floor" data-price="88000">
-          <span>頑丈重荷重 床張りキット</span>
-          <span>¥88,000</span>
-        </div>
-        <div class="sim-opt" data-part="rack" data-price="125000">
-          <span>サイドスチールラック棚</span>
-          <span>¥125,000</span>
-        </div>
-        <div class="sim-opt" data-part="led" data-price="45000">
-          <span>高輝度 天井埋込LED照明</span>
-          <span>¥45,000</span>
-        </div>
-        <div class="sim-opt" data-part="power" data-price="150000">
-          <span>100V 大容量サブバッテリー</span>
-          <span>¥150,000</span>
-        </div>
-
-        <div class="sim-summary">
-          <span>概算合計（税込）:</span>
-          <span class="sim-total-price" id="sim-total">¥0</span>
-        </div>
-
-        <button class="btn-action btn-line" id="btn-line-send">
-          💬 この構成のままLINEでお見積り・相談
-        </button>
-      </div>
-    </div>
-
-    <!-- 2. GAS連携：リアルタイム在庫表示＆店舗施工予約 -->
-    <div class="stock-section" id="booking-section">
-      <h2 class="section-title">リアルタイム在庫 ＆ ピット施工予約</h2>
-      
-      <p style="color: var(--text-dim);">スプレッドシート（GAS）と連動して最新の在庫状況を表示しています。</p>
-      
-      <div class="stock-list" id="stock-container">
-        <!-- GASからデータを読み込むまでのダミー表示 -->
-        <div class="stock-card">読み込み中...</div>
-      </div>
-
-      <form id="gas-booking-form" style="margin-top: 2rem;">
-        <h3 style="margin-bottom: 1rem; color: var(--accent-yellow);">カスタム施工ピットの予約</h3>
-        <div class="form-group">
-          <label>お名前</label>
-          <input type="text" id="book-name" required placeholder="職人 太郎">
-        </div>
-        <div class="form-group">
-          <label>希望希望プラン</label>
-          <select id="book-plan">
-            <option>シミュレーターの構成で相談</option>
-            <option>店頭でツール選び＆相談</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>ご来店希望日</label>
-          <input type="date" id="book-date" required>
-        </div>
-        <button type="submit" class="btn-action btn-submit" id="btn-submit-booking">
-          GASへ送信して予約を確定する
-        </button>
-      </form>
-    </div>
-
+  <div class="intro" id="intro">
+    <img src="assets/logo-sagami.png" alt="SAGAMI">
+    <div class="intro-text">SAGAMI TOOL SHOP</div>
+    <div class="intro-bar"></div>
   </div>
 
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <div class="hd-strip">
+    <div class="hd-track">
+      <span>★ 工具専門店 Sagami</span><span>販売・レンタル・ハイエース荷室カスタム</span><span>伊勢原市高森</span><span>営業 9:00–19:00</span>
+      <span>★ 工具専門店 Sagami</span><span>販売・レンタル・ハイエース荷室カスタム</span><span>伊勢原市高森</span><span>営業 9:00–19:00</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-top">
+      <div class="logo"><img src="assets/logo-sagami.png" alt="工具専門店Sagami ロゴ"></div>
+      <button class="hamburger" id="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu">
+        <a href="#custom">荷室カスタム</a>
+        <a href="#sale">販売</a>
+        <a href="#rental">レンタル</a>
+        <a href="#news">お知らせ</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#faq">FAQ</a>
+        <a href="#access">アクセス</a>
+      </nav>
+    </div>
+    <div class="header-info">
+      <div><b>営業時間</b>9:00–19:00 <span class="open-badge" id="open-badge" style="margin-left:8px;"><span class="ob-dot"></span><span id="open-badge-text">確認中</span></span></div>
+      <div><b>定休日</b>日曜（土曜も当面休業）</div>
+      <div><b>所在地</b>神奈川県伊勢原市高森3-1-63</div>
+    </div>
+  </header>
+  <div class="hazard"></div>
+
+  <div class="hero">
+    <h1 class="distress fade-seq">SAGAMI</h1>
+    <span class="script fade-seq">Tool Shop</span>
+
+    <svg class="hero-art" viewBox="0 0 400 210" fill="currentColor" role="img" aria-label="vintage hiace van">
+      <g>
+      <g transform="translate(400,0) scale(-1,1)">
+      <path d="M18,152 V118 Q18,104 30,98 L36,80 Q40,64 58,58 Q66,52 80,50 H326 Q338,50 338,62 V152 Z"/>
+      <rect x="14" y="130" width="30" height="20" rx="3" fill="#f4f2ee"/>
+      <rect x="22" y="112" width="14" height="14" rx="2"/>
+      <rect x="24" y="115" width="10" height="1.5"/>
+      <rect x="24" y="119" width="10" height="1.5"/>
+      <rect x="24" y="123" width="10" height="1.5"/>
+      <rect x="14" y="98" width="11" height="10" rx="2" fill="#f4f2ee"/>
+      <circle cx="19.5" cy="103" r="2.2"/>
+      <circle id="hl-flash" cx="19.5" cy="103" r="9" fill="#e4f222" stroke="none"/>
+      <rect x="33" y="98" width="11" height="10" rx="2" fill="#f4f2ee"/>
+      <circle cx="38.5" cy="103" r="2.2"/>
+      <path d="M50,98 L62,64 Q65,58 72,56 L84,56 V98 Z" fill="#f4f2ee"/>
+      <rect x="96" y="62" width="176" height="30" rx="2" fill="#f4f2ee"/>
+      <rect x="140" y="62" width="6" height="30"/>
+      <rect x="182" y="62" width="6" height="30"/>
+      <rect x="188" y="94" width="4" height="58"/>
+      <rect x="250" y="112" width="14" height="5" rx="2" fill="#f4f2ee"/>
+      <rect x="110" y="112" width="12" height="5" rx="2" fill="#f4f2ee"/>
+      <path d="M44,80 Q30,78 28,90 Q28,98 38,98 L44,92 Z"/>
+      <circle cx="88" cy="152" r="40" fill="#f4f2ee"/>
+      <circle cx="286" cy="152" r="40" fill="#f4f2ee"/>
+      <g>
+        <circle cx="88" cy="152" r="34"/>
+        <circle cx="88" cy="152" r="18" fill="#f4f2ee"/>
+        <circle cx="88" cy="152" r="7"/>
+        <path class="wheel" d="M88,152 l0,-16 M88,152 l15,5 M88,152 l-15,5 M88,152 l9,-13 M88,152 l-9,-13" stroke="currentColor" stroke-width="4"/>
+      </g>
+      <g>
+        <circle cx="286" cy="152" r="34"/>
+        <circle cx="286" cy="152" r="18" fill="#f4f2ee"/>
+        <circle cx="286" cy="152" r="7"/>
+        <path class="wheel" d="M286,152 l0,-16 M286,152 l15,5 M286,152 l-15,5 M286,152 l9,-13 M286,152 l-9,-13" stroke="currentColor" stroke-width="4"/>
+      </g>
+      <rect x="330" y="132" width="14" height="10"/>
+      <rect x="10" y="194" width="340" height="4"/>
+      </g>
+      <g font-family="Oswald, sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">
+        <text x="200" y="22">EST. ★ 2018</text>
+      </g>
+      </g>
+    </svg>
+    <div class="dust-wrap">
+      <span class="dust"></span>
+      <span class="dust"></span>
+      <span class="dust"></span>
+    </div>
+
+    <div class="sub-en fade-seq">S A L E S&nbsp;&nbsp;&amp;&nbsp;&nbsp;R E N T A L</div>
+    <h1 class="distress fade-seq" style="font-size:clamp(2rem,5.5vw,4rem);">POWER TOOLS</h1>
+
+    <p class="fade-seq">マキタをはじめとした電動工具・エア工具を、現場で使える一台だけ厳選して取り揃えています。伊勢原の工具専門店から、販売・レンタルでお届けします。</p>
+    <div class="hero-cta fade-seq">
+      <a href="#sale" class="btn btn-solid">販売商品を見る</a>
+      <a href="#rental" class="btn btn-outline">レンタル空き状況</a>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num">2018</span>
+        <span class="stat-label">創業 — 伊勢原の工具専門店</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1/1</span>
+        <span class="stat-label">世界に一つの荷室カスタム</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">9–19</span>
+        <span class="stat-label">営業時間 — 現場帰りにどうぞ</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="pillars-section" id="pillars">
+    <div class="section-head" style="max-width:1180px; margin-left:auto; margin-right:auto;">
+      <span class="tag">OUR SERVICES</span>
+      <h2>工具のことなら、ぜんぶSagamiへ。</h2>
+    </div>
+    <div class="pillars-grid">
+
+      <a href="#sale" class="pillar">
+        <span class="pl-num">01</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M8 18 L22 6 L40 6 L40 24 L28 38 L8 18 Z"/>
+          <circle cx="33" cy="13" r="3"/>
+          <path d="M14 24 l8 8" stroke-width="2"/>
+        </svg>
+        <h3>買う</h3>
+        <p>マキタなどプロ向け電動工具を、現場で使える一台だけ厳選。オンライン決済で即購入。</p>
+        <span class="pl-arrow">商品を見る →</span>
+      </a>
+
+      <a href="#rental" class="pillar">
+        <span class="pl-num">02</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="6" y="10" width="36" height="32" rx="3"/>
+          <path d="M6 20 h36 M16 6 v8 M32 6 v8"/>
+          <path d="M20 30 l4 4 l8 -8" stroke-width="3"/>
+        </svg>
+        <h3>借りる</h3>
+        <p>たまにしか使わない工具は、必要な期間だけ。サイトで空き確認、フォームで予約完了。</p>
+        <span class="pl-arrow">空き状況を見る →</span>
+      </a>
+
+      <a href="#custom" class="pillar">
+        <span class="pl-num">03</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M4 34 V22 q0 -3 3 -4 l3 -6 q1 -2 4 -2 h26 q4 0 4 4 v20"/>
+          <circle cx="14" cy="36" r="5"/>
+          <circle cx="36" cy="36" r="5"/>
+          <path d="M19 36 h12 M4 34 h5 M41 34 h3" stroke-width="2"/>
+        </svg>
+        <h3>荷室カスタム</h3>
+        <p>ハイエースの荷室を、あなたの道具に合わせてオーダーメイド。一台ずつ手作業で。</p>
+        <span class="pl-arrow">施工を見る →</span>
+      </a>
+
+      <a href="#form" class="pillar">
+        <span class="pl-num">04</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M6 8 h36 v24 h-20 l-9 8 v-8 h-7 z"/>
+          <path d="M27 15 a6 6 0 1 0 -8 8 l-4 4 l4 4 l4 -4" stroke-width="2.2"/>
+        </svg>
+        <h3>相談する</h3>
+        <p>「どの工具を買えばいい？」用途や現場に合わせて、プロ目線でご案内します。</p>
+        <span class="pl-arrow">相談フォームへ →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="custom-section" id="custom">
+
+    <div class="custom-hero">
+      <div class="custom-hero-bg">
+        <img src="assets/custom-photo-packout.jpg" alt="ハイエース荷室のカスタム収納">
+      </div>
+      <div class="custom-hero-content">
+        <div class="custom-kicker">HIACE CUSTOM BUILD ｜ 世界に一つの一台</div>
+        <h2>その荷室は、<br>あなただけの<em>相棒</em>になる。</h2>
+        <p class="custom-hero-lead">既製品では、届かない場所がある。工具を知り尽くした店だからこそできる、一台ずつ手で仕上げるハイエース荷室カスタム。あなたの現場に、あなたの道具に、ぴったり合わせて作り込みます。</p>
+        <a href="#form" class="btn btn-solid">荷室カスタムを相談する</a>
+      </div>
+    </div>
+
+    <div class="giant-marquee" aria-hidden="true">
+      <div class="gm-track">
+        <span>CUSTOM BUILD ★ HIACE ★</span>
+        <span>CUSTOM BUILD ★ HIACE ★</span>
+        <span>CUSTOM BUILD ★ HIACE ★</span>
+      </div>
+    </div>
+
+    <div class="custom-process">
+      <div class="custom-process-head">
+        <div class="ph-kicker">HOW WE BUILD</div>
+        <h3>妥協なく、一台ずつ。</h3>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <h4>ヒアリング</h4>
+          <p>どんな道具を、どう積むか。現場での使い方を細かくお聞きして、最適なレイアウトを一緒に考えます。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <h4>設計・提案</h4>
+          <p>棚の高さ、引き出しの数、電源の位置まで。工具のプロ目線で、無駄のない設計をご提案します。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <h4>施工</h4>
+          <p>断熱・防音から棚組み、配線まで一台ずつ手作業で。既製品では出せない精度で作り込みます。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <h4>納車</h4>
+          <p>仕上がりを一緒に確認して、明日からの現場へ。使ってみての微調整もお任せください。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 荷室カスタム・シミュレーター -->
+    <div class="sim-wrap" id="simulator">
+      <div class="sim-panel">
+        <div class="sim-van">
+          <svg viewBox="0 0 400 220" fill="none" stroke="#c99a3f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M14,168 V96 Q14,84 26,80 L34,58 Q38,44 54,42 H330 Q344,42 344,56 V168 Z"/>
+            <path d="M96,42 V168" stroke-dasharray="4 5" opacity="0.6"/>
+            <path d="M30,80 L40,56 Q42,50 50,50 H62 V80 Z" fill="#f4f2ee" opacity="0.25"/>
+            <circle cx="70" cy="176" r="24"/>
+            <circle cx="70" cy="176" r="9" fill="#c99a3f" stroke="none" opacity="0.5"/>
+            <circle cx="296" cy="176" r="24"/>
+            <circle cx="296" cy="176" r="9" fill="#c99a3f" stroke="none" opacity="0.5"/>
+            <path d="M8,202 h384" stroke-width="3"/>
+
+            <g class="sim-part" id="sim-insul" stroke="#7a736a">
+              <path d="M100,48 l14,-4 M116,48 l14,-4 M132,48 l14,-4 M148,48 l14,-4 M164,48 l14,-4 M180,48 l14,-4 M196,48 l14,-4 M212,48 l14,-4 M228,48 l14,-4 M244,48 l14,-4 M260,48 l14,-4 M276,48 l14,-4 M292,48 l14,-4 M308,48 l14,-4" stroke-width="2"/>
+              <path d="M338,60 v100" stroke-width="4" opacity="0.5"/>
+            </g>
+
+            <g class="sim-part" id="sim-shelf">
+              <path d="M104,86 H336 M104,116 H336" stroke-width="4"/>
+              <path d="M110,86 v-14 M336,86 v-14 M110,116 v-14 M336,116 v-14" stroke-width="2.5"/>
+              <rect x="118" y="70" width="26" height="14" fill="#c99a3f" opacity="0.35" stroke="none"/>
+              <rect x="150" y="70" width="26" height="14" fill="#c99a3f" opacity="0.35" stroke="none"/>
+              <rect x="200" y="100" width="30" height="14" fill="#c99a3f" opacity="0.35" stroke="none"/>
+            </g>
+
+            <g class="sim-part" id="sim-drawer">
+              <rect x="104" y="138" width="120" height="28" rx="2"/>
+              <path d="M104,152 H224" stroke-width="2"/>
+              <rect x="150" y="143" width="24" height="4" fill="#c99a3f" stroke="none"/>
+              <rect x="150" y="157" width="24" height="4" fill="#c99a3f" stroke="none"/>
+            </g>
+
+            <g class="sim-part" id="sim-power">
+              <rect x="300" y="136" width="32" height="30" rx="3"/>
+              <path d="M316,142 l-6,10 h6 l-4,9" stroke="#e4f222" stroke-width="3"/>
+            </g>
+
+            <g class="sim-part" id="sim-led">
+              <rect x="130" y="50" width="180" height="5" rx="2.5" fill="#e4f222" stroke="none"/>
+              <path d="M150,58 v10 M200,58 v12 M250,58 v10 M290,58 v9" stroke="#e4f222" stroke-width="1.5" opacity="0.6"/>
+            </g>
+
+            <g class="sim-part" id="sim-bed">
+              <rect x="230" y="124" width="106" height="10" rx="2"/>
+              <path d="M238,134 v32 M328,134 v32" stroke-width="3"/>
+              <path d="M234,124 q10,-8 22,0 q10,-8 22,0 q10,-8 22,0 q10,-8 22,0" stroke-width="2" opacity="0.7"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="sim-controls">
+          <span class="sc-kicker">BUILD YOUR OWN</span>
+          <h3>荷室を組んでみる。</h3>
+          <div class="sim-opts">
+            <button class="sim-opt" data-target="sim-shelf" data-price="45000">収納棚(壁面2段)<span class="so-price">¥45,000〜</span></button>
+            <button class="sim-opt" data-target="sim-drawer" data-price="60000">引き出しユニット<span class="so-price">¥60,000〜</span></button>
+            <button class="sim-opt" data-target="sim-power" data-price="80000">サブバッテリー電源<span class="so-price">¥80,000〜</span></button>
+            <button class="sim-opt" data-target="sim-led" data-price="25000">LED照明<span class="so-price">¥25,000〜</span></button>
+            <button class="sim-opt" data-target="sim-bed" data-price="70000">ベッドキット<span class="so-price">¥70,000〜</span></button>
+            <button class="sim-opt" data-target="sim-insul" data-price="90000">断熱・防音施工<span class="so-price">¥90,000〜</span></button>
+          </div>
+          <div class="sim-total-row">
+            <span class="st-label">概算合計</span>
+            <span class="sim-total" id="sim-total">¥0〜</span>
+          </div>
+          <button class="sim-cta" id="sim-cta">この構成でWeb相談する →</button>
+          <button class="sim-line-cta" id="sim-line-cta">💬 LINEでこの見積りを送る →</button>
+          <p class="sim-note">※金額は目安です。車種・素材・仕様により変わります。正確なお見積りはヒアリング後にご提示します。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-gallery-wrap">
+      <div class="custom-gallery-head">
+        <h3>施工実績</h3>
+        <span>SAGAMI ORIGINAL CRAFT</span>
+      </div>
+      <div class="custom-gallery">
+        <div class="custom-photo">
+          <span class="cp-num">01</span>
+          <img src="assets/custom-photo-packout.jpg" alt="ハイエース荷室のMilwaukee PACKOUT収納システム施工例" loading="lazy">
+          <span class="cp-label">PACKOUT収納システム</span>
+        </div>
+        <div class="custom-photo">
+          <span class="cp-num">02</span>
+          <img src="assets/custom-photo-container.jpg" alt="自作のMakita収納コンテナ" loading="lazy">
+          <span class="cp-label">自作Makitaコンテナ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sale">
+    <div class="section-head">
+      <span class="tag">SALE</span>
+      <h2>人気商品（販売）</h2>
+      <span class="section-sub">STRIPE決済リンクで購入</span>
+    </div>
+
+    <div class="product-search">
+      <input type="text" id="product-search-input" placeholder="商品名・メーカー・スペックで検索(例: マキタ / 18V / マルノコ)">
+      <span class="ps-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 L21 21"/></svg>
+      </span>
+    </div>
+
+    <div class="toolbar">
+      <div class="sort-bar">
+        <a href="#" class="active">人気順</a>
+        <a href="#">価格が安い順</a>
+        <a href="#">価格が高い順</a>
+        <a href="#">新着順</a>
+      </div>
+    </div>
+    <div class="filter-chips">
+      <span class="chip active">すべて</span>
+      <span class="chip">インパクトドライバ</span>
+      <span class="chip">マルノコ</span>
+      <span class="chip">エア工具</span>
+      <span class="chip">バッテリー・充電器</span>
+    </div>
+
+    <div class="grid">
+
+      <div class="card" data-cat="インパクトドライバ" data-price="18700">
+        <div class="card-img">
+          <svg viewBox="0 0 120 92" fill="none" stroke="#c99a3f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="18" y="18" width="56" height="26" rx="7"/>
+            <path d="M25,24 h20 M25,31 h14" stroke-width="2" opacity="0.7"/>
+            <rect x="74" y="24" width="14" height="14" rx="2"/>
+            <rect x="88" y="28" width="12" height="6" fill="#c99a3f" stroke="none"/>
+            <path d="M36,44 L58,44 L52,76 L32,76 Z"/>
+            <rect x="28" y="76" width="28" height="9" rx="2" fill="#f4f2ee" stroke="#f4f2ee"/>
+            <rect x="56" y="47" width="6" height="10" rx="2" fill="#c99a3f" stroke="none"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0001 / マキタ</div>
+          <div class="card-name">充電式インパクトドライバ</div>
+          <div class="card-price">¥18,700</div>
+          <div class="spec-tags">
+            <span class="spec-tag">電圧:18V</span>
+            <span class="spec-tag">最大トルク:180〜199N.m</span>
+          </div>
+          <span class="card-stock ok">在庫あり</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+          <button class="add-quote">＋ 見積りリストに追加</button>
+        </div>
+      </div>
+
+      <div class="card" data-cat="マルノコ" data-price="42000">
+        <div class="card-img">
+          <svg viewBox="0 0 120 92" fill="none" stroke="#c99a3f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+            <circle cx="44" cy="54" r="26"/>
+            <circle cx="44" cy="54" r="26" stroke-dasharray="5 6" stroke-width="6" opacity="0.55"/>
+            <circle cx="44" cy="54" r="5" fill="#c99a3f" stroke="none"/>
+            <path d="M18,54 A26,26 0 0 1 70,54" stroke-width="8" stroke="#f4f2ee"/>
+            <path d="M62,30 h26 a8,8 0 0 1 8,8 v12 h-16"/>
+            <rect x="66" y="50" width="26" height="18" rx="3"/>
+            <path d="M10,82 h86" stroke="#f4f2ee" stroke-width="4"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0002 / マキタ</div>
+          <div class="card-name">充電式マルノコ 40V</div>
+          <div class="card-price">¥42,000</div>
+          <div class="spec-tags">
+            <span class="spec-tag">電圧:36-40V</span>
+            <span class="spec-tag">刃径:165mm</span>
+          </div>
+          <span class="card-stock low">残りわずか</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+          <button class="add-quote">＋ 見積りリストに追加</button>
+        </div>
+      </div>
+
+      <div class="card" data-cat="エア工具" data-price="15400">
+        <div class="card-img">
+          <svg viewBox="0 0 120 92" fill="none" stroke="#c99a3f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="20" y="26" width="50" height="22" rx="10"/>
+            <path d="M28,32 h14 M28,39 h9" stroke-width="2" opacity="0.7"/>
+            <rect x="70" y="31" width="12" height="12"/>
+            <rect x="82" y="33" width="9" height="9" fill="#c99a3f" stroke="none" transform="rotate(45 86 37)"/>
+            <path d="M32,48 L52,48 L47,78 L28,78 Z"/>
+            <rect x="32" y="78" width="12" height="8" rx="2" fill="#f4f2ee" stroke="#f4f2ee"/>
+            <rect x="50" y="51" width="6" height="9" rx="2" fill="#c99a3f" stroke="none"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-id">ITEM-0003 / OSK</div>
+          <div class="card-name">エアインパクトレンチ</div>
+          <div class="card-price">¥15,400</div>
+          <div class="spec-tags">
+            <span class="spec-tag">最大トルク:300〜400N.m</span>
+          </div>
+          <span class="card-stock ok">在庫あり</span>
+          <div class="ship-badge">即日発送対応</div>
+          <a href="#" class="card-buy">STRIPEで購入 →</a>
+          <button class="add-quote">＋ 見積りリストに追加</button>
+        </div>
+      </div>
+
+    </div>
+    <p class="no-results" id="no-results">該当する商品が見つかりませんでした。キーワードを変えてお試しください。</p>
+  </section>
+
+  <section id="rental" class="rental-section">
+    <div class="section-head">
+      <span class="tag">RENTAL</span>
+      <h2>レンタル商品・空き状況</h2>
+      <span class="section-sub">フォーム予約 → 店舗で確定連絡</span>
+    </div>
+    <div class="grid">
+
+      <div class="card rental-card">
+        <div class="card-img">
+          <svg viewBox="0 0 120 92" fill="none" stroke="#c99a3f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="30" y="22" width="36" height="44" rx="4"/>
+            <path d="M36,32 h24 M36,40 h16" stroke-width="2" opacity="0.7"/>
+            <path d="M34,22 V10 H62 V22"/>
+            <circle cx="38" cy="76" r="9"/>
+            <circle cx="38" cy="76" r="3" fill="#c99a3f" stroke="none"/>
+            <path d="M60,66 h10 v10" stroke-width="3"/>
+            <path d="M66,44 C 92,52 96,34 86,26" stroke="#f4f2ee"/>
+            <path d="M84,20 L96,26 L88,32" fill="#f4f2ee" stroke="#f4f2ee"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-id">RENTAL-0001</div>
+          <div class="card-name">高圧洗浄機</div>
+          <div class="card-price">¥3,000 / 日</div>
+          <div class="avail-row">
+            <div class="avail-day">7/14</div>
+            <div class="avail-day">7/15</div>
+            <div class="avail-day full">7/16</div>
+            <div class="avail-day">7/17</div>
+            <div class="avail-day">7/18</div>
+          </div>
+          <div class="avail-legend">緑＝空きあり／赤＝満数</div>
+          <a href="#form" class="rental-btn">この日程で予約する</a>
+        </div>
+      </div>
+
+      <div class="card rental-card">
+        <div class="card-img">
+          <svg viewBox="0 0 120 92" fill="none" stroke="#c99a3f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="16" y="28" width="88" height="42" rx="5"/>
+            <path d="M22,28 V18 H98 V28" stroke-width="3"/>
+            <rect x="24" y="36" width="30" height="26" rx="3"/>
+            <path d="M30,44 h18 M30,52 h12" stroke-width="2" opacity="0.7"/>
+            <rect x="62" y="38" width="34" height="22" rx="3" stroke="#f4f2ee"/>
+            <circle cx="72" cy="49" r="4.5" fill="#f4f2ee" stroke="none"/>
+            <circle cx="86" cy="49" r="4.5" fill="#f4f2ee" stroke="none"/>
+            <rect x="22" y="70" width="10" height="8" fill="#c99a3f" stroke="none"/>
+            <rect x="88" y="70" width="10" height="8" fill="#c99a3f" stroke="none"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-id">RENTAL-0002</div>
+          <div class="card-name">発電機 2.0kVA</div>
+          <div class="card-price">¥4,500 / 日</div>
+          <div class="avail-row">
+            <div class="avail-day">7/14</div>
+            <div class="avail-day full">7/15</div>
+            <div class="avail-day full">7/16</div>
+            <div class="avail-day">7/17</div>
+            <div class="avail-day">7/18</div>
+          </div>
+          <div class="avail-legend">緑＝空きあり／赤＝満数</div>
+          <a href="#form" class="rental-btn">この日程で予約する</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="form-section" id="form">
+    <div class="section-head">
+      <span class="tag">BOOKING</span>
+      <h2>レンタル予約フォーム</h2>
+    </div>
+    <div class="form-wrap">
+      <div class="form-row">
+        <label>希望商品</label>
+        <select><option>高圧洗浄機</option><option>発電機 2.0kVA</option></select>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label>貸出希望日</label>
+          <input type="date">
+        </div>
+        <div class="form-row">
+          <label>返却希望日</label>
+          <input type="date">
+        </div>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label>お名前</label>
+          <input type="text" placeholder="山田 太郎">
+        </div>
+        <div class="form-row">
+          <label>電話番号 または LINE ID</label>
+          <input type="text" placeholder="090-XXXX-XXXX">
+        </div>
+      </div>
+      <div class="form-row">
+        <label>備考</label>
+        <textarea rows="3" placeholder="使用用途など" id="f-note"></textarea>
+      </div>
+      <button class="form-submit" id="f-submit">予約リクエストを送る</button>
+      <p id="f-status" style="margin-top:12px; font-family:var(--font-mono); font-size:0.8rem;"></p>
+    </div>
+  </section>
+
+  <section class="news-section" id="news">
+    <div class="section-head">
+      <span class="tag">NEWS</span>
+      <h2>お知らせ</h2>
+    </div>
+    <div class="news-list" id="news-list"></div>
+  </section>
+
   <script>
-    // ==========================================
-    // 1. GSAP アニメーション設定
-    // ==========================================
-    gsap.registerPlugin(ScrollTrigger);
+    const NEWS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzqomcD1Pvaf7Vbe1cmrBC9EGACNupAot96HFwOoHkyguhk0SBdyTEHwP-rZC5gBugP/exec?action=news";
 
-    // ヒーローテキストのアニメーション
-    gsap.from("#hero-title", {
-      duration: 1.2,
-      y: 50,
-      opacity: 0,
-      ease: "power4.out"
-    });
-    gsap.from("#hero-sub", {
-      duration: 1.2,
-      y: 30,
-      opacity: 0,
-      delay: 0.3,
-      ease: "power4.out"
-    });
+    const fallbackNewsData = [
+      { date: "2026-07-14", tag: "商品情報", title: "レンタル品に「発電機 2.0kVA」を追加しました" },
+      { date: "2026-07-01", tag: "営業案内", title: "夏季につき、しばらくの間 土曜日も休業とさせていただきます" },
+      { date: "2026-06-20", tag: "サイト", title: "オンラインでの販売・レンタル予約受付を開始しました" }
+    ];
 
-    // スクロールに応じたセクションフェードイン
-    gsap.from(".sim-grid", {
-      scrollTrigger: {
-        trigger: ".sim-grid",
-        start: "top 80%",
-      },
-      duration: 1,
-      y: 40,
-      opacity: 0,
-      ease: "power2.out"
-    });
-
-    // ==========================================
-    // 2. シミュレーター ＆ SVGリアルタイム連動
-    // ==========================================
-    const options = document.querySelectorAll('.sim-opt');
-    const totalEl = document.getElementById('sim-total');
-    let totalPrice = 0;
-
-    options.forEach(opt => {
-      opt.addEventListener('click', () => {
-        opt.classList.toggle('on');
-        
-        const partId = opt.getAttribute('data-part');
-        const price = parseInt(opt.getAttribute('data-price'));
-        const targetSvgPart = document.getElementById(`svg-${partId}`);
-
-        if (opt.classList.contains('on')) {
-          totalPrice += price;
-          // SVGパーツをアクティブ化 ＆ GSAPポップアニメーション
-          if (targetSvgPart) {
-            targetSvgPart.classList.add('active');
-            gsap.fromTo(targetSvgPart, { scale: 1.1 }, { scale: 1, duration: 0.3 });
-          }
-        } else {
-          totalPrice -= price;
-          if (targetSvgPart) {
-            targetSvgPart.classList.remove('active');
-          }
-        }
-
-        // 合計金額の更新
-        totalEl.textContent = `¥${totalPrice.toLocaleString()}`;
-      });
-    });
-
-    // ==========================================
-    // 3. LINE見積もり送信連携
-    // ==========================================
-    document.getElementById('btn-line-send').addEventListener('click', () => {
-      const selected = Array.from(document.querySelectorAll('.sim-opt.on'));
-      if (selected.length === 0) {
-        alert('カスタムパーツを1つ以上選択してください。');
+    function renderNews(newsData){
+      const newsListEl = document.getElementById("news-list");
+      if (!newsData || newsData.length === 0){
+        newsListEl.innerHTML = '<p class="news-empty">現在お知らせはありません。</p>';
         return;
       }
-      
-      let msg = "【ハイエース荷室カスタム見積相談】\n";
-      selected.forEach(o => {
-        const name = o.querySelector('span:first-child').textContent;
-        const price = o.querySelector('span:last-child').textContent;
-        msg += `・${name} (${price})\n`;
-      });
-      msg += `-------------------\n概算合計: ¥${totalPrice.toLocaleString()}\n\nこちらの構成で詳細の相談をお願いします！`;
+      newsListEl.innerHTML = newsData.map(item => `
+        <div class="news-item">
+          <span class="news-date">${item.date.replace(/-/g, "/")}</span>
+          <span class="news-tag">${item.tag}</span>
+          <span class="news-title">${item.title}</span>
+        </div>
+      `).join("");
+    }
 
-      const lineUrl = `https://line.me/R/share?text=${encodeURIComponent(msg)}`;
-      window.open(lineUrl, '_blank');
-    });
-
-    // ==========================================
-    // 4. GAS (Google Apps Script) バックエンド連携
-    // ==========================================
-    // 💡注意: 以下に作成したGASをデプロイしたウェブアプリURLを貼り付けます
-    const GAS_WEBAPP_URL = "YOUR_GAS_WEB_APP_URL_HERE";
-
-    // リアルタイム在庫データの取得 (GET)
-    async function fetchStockData() {
-      const container = document.getElementById('stock-container');
-      
-      if(GAS_WEBAPP_URL === "YOUR_GAS_WEB_APP_URL_HERE") {
-        // GAS URLが未設定時のフォールバック表示
-        container.innerHTML = `
-          <div class="stock-card">
-            <h4>頑丈重荷重 床張りキット</h4>
-            <span class="stock-status status-ok">在庫あり (即納)</span>
-          </div>
-          <div class="stock-card">
-            <h4>100V サブバッテリー</h4>
-            <span class="stock-status status-low">残り2点</span>
-          </div>
-        `;
-        return;
-      }
-
+    async function loadNews(){
       try {
-        const res = await fetch(GAS_WEBAPP_URL);
+        const res = await fetch(NEWS_ENDPOINT);
+        if (!res.ok) throw new Error("network error");
         const data = await res.json();
-        
-        container.innerHTML = "";
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'stock-card';
-          card.innerHTML = `
-            <h4>${item.name}</h4>
-            <span class="stock-status ${item.stock > 3 ? 'status-ok' : 'status-low'}">
-              ${item.stock > 0 ? `在庫あり (${item.stock}点)` : '入荷待ち'}
-            </span>
-          `;
-          container.appendChild(card);
-        });
-      } catch (e) {
-        container.innerHTML = "在庫データの取得に失敗しました。";
+        renderNews(data.news);
+      } catch (err) {
+        renderNews(fallbackNewsData);
+      } finally {
+        setupRevealObserver();
       }
     }
 
-    // 予約フォーム送信 (POST)
-    document.getElementById('gas-booking-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const btn = document.getElementById('btn-submit-booking');
-      btn.disabled = true;
-      btn.textContent = "送信中...";
+    function setupRevealObserver(){
+      const revealTargets = document.querySelectorAll(
+        '.section-head, .card, .faq-item, .form-wrap, .toolbar, .filter-chips, .news-item, .process-step, .custom-photo, .custom-gallery-head'
+      );
+      revealTargets.forEach(el => {
+        if (!el.classList.contains('reveal')){
+          el.classList.add('reveal');
+          io.observe(el);
+        }
+      });
+    }
 
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    setupRevealObserver();
+    loadNews();
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const progressBar = document.getElementById('scroll-progress');
+    const headerEl = document.querySelector('header');
+    const backToTop = document.getElementById('back-to-top');
+    const customHeroBg = document.querySelector('.custom-hero-bg img');
+    const customHeroSec = document.querySelector('.custom-hero');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+      headerEl.classList.toggle('scrolled', scrollTop > 80);
+      backToTop.classList.toggle('show', scrollTop > 600);
+      if (customHeroBg && customHeroSec){
+        const rect = customHeroSec.getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight){
+          customHeroBg.style.transform = `translateY(${rect.top * -0.12}px) scale(1.12)`;
+        }
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const statNums = document.querySelectorAll('.stat-num');
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const finalText = el.textContent;
+        const numeric = parseInt(finalText, 10);
+        if (!isNaN(numeric) && String(numeric) === finalText){
+          let start = null;
+          const duration = 1200;
+          const from = Math.max(0, numeric - 400);
+          function tick(ts){
+            if (!start) start = ts;
+            const p = Math.min((ts - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(from + (numeric - from) * eased);
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        } else {
+          el.style.animation = 'fadeInUp .7s ease both';
+        }
+        statObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    statNums.forEach(el => statObserver.observe(el));
+
+    const saleGrid = document.querySelector('#sale .grid');
+    const saleCards = Array.from(saleGrid.querySelectorAll('.card'));
+    const searchInput = document.getElementById('product-search-input');
+    const noResults = document.getElementById('no-results');
+    const chips = document.querySelectorAll('#sale .chip');
+    const sortLinks = document.querySelectorAll('#sale .sort-bar a');
+    let activeCat = 'すべて';
+    let keyword = '';
+
+    function applyFilters(){
+      let visible = 0;
+      saleCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const cat = card.dataset.cat || '';
+        const catOk = (activeCat === 'すべて') || (cat === activeCat);
+        const kwOk = !keyword || text.includes(keyword);
+        const show = catOk && kwOk;
+        card.classList.toggle('filtered-out', !show);
+        if (show) visible++;
+      });
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+
+    searchInput.addEventListener('input', () => {
+      keyword = searchInput.value.trim().toLowerCase();
+      applyFilters();
+    });
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeCat = chip.textContent.trim();
+        applyFilters();
+      });
+    });
+
+    const originalOrder = saleCards.slice();
+    sortLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        sortLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        const mode = link.textContent.trim();
+        let ordered;
+        if (mode === '価格が安い順'){
+          ordered = saleCards.slice().sort((a,b)=> (+a.dataset.price) - (+b.dataset.price));
+        } else if (mode === '価格が高い順'){
+          ordered = saleCards.slice().sort((a,b)=> (+b.dataset.price) - (+a.dataset.price));
+        } else {
+          ordered = originalOrder;
+        }
+        ordered.forEach(card => saleGrid.appendChild(card));
+      });
+    });
+    });
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        navToggle.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const intro = document.getElementById('intro');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let introSeen = false;
+      try { introSeen = sessionStorage.getItem('sagami-intro') === '1'; } catch(e){}
+      function endIntro(){
+        intro.classList.add('done');
+        try { sessionStorage.setItem('sagami-intro', '1'); } catch(e){}
+        setTimeout(() => intro.classList.add('gone'), 750);
+      }
+      if (introSeen || reduceMotion){
+        intro.classList.add('done','gone');
+      } else {
+        const timer = setTimeout(endIntro, 2900);
+        intro.addEventListener('click', () => { clearTimeout(timer); endIntro(); });
+      }
+
+      const heroH1 = document.querySelector('.hero h1.distress');
+      if (heroH1){
+        heroH1.innerHTML = heroH1.textContent.split('').map(ch =>
+          `<span class="ch">${ch}</span>`).join('');
+      }
+
+      if (window.matchMedia('(hover: hover)').matches && !reduceMotion){
+        document.querySelectorAll('#sale .card').forEach(card => {
+          card.addEventListener('mousemove', e => {
+            const r = card.getBoundingClientRect();
+            const px = (e.clientX - r.left) / r.width - 0.5;
+            const py = (e.clientY - r.top) / r.height - 0.5;
+            card.style.transform =
+              `translate(-3px,-6px) rotateY(${px * 10}deg) rotateX(${py * -10}deg)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
+
+        document.querySelectorAll('.hero-cta .btn').forEach(btn => {
+          btn.addEventListener('mousemove', e => {
+            const r = btn.getBoundingClientRect();
+            const dx = (e.clientX - (r.left + r.width/2)) * 0.15;
+            const dy = (e.clientY - (r.top + r.height/2)) * 0.25;
+            btn.style.transform = `translate(${dx}px, ${dy}px)`;
+          });
+          btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+        });
+      }
+
+      // 荷室カスタム・シミュレーター（SVGリアルタイム演出＆LINE連携付き）
+      const simOpts = document.querySelectorAll('.sim-opt');
+      const simTotalEl = document.getElementById('sim-total');
+      const simCta = document.getElementById('sim-cta');
+      const simLineCta = document.getElementById('sim-line-cta');
+      let simCurrent = 0;
+
+      function animateTotal(to){
+        const from = simCurrent;
+        simCurrent = to;
+        const dur = 500;
+        let start = null;
+        function tick(ts){
+          if (!start) start = ts;
+          const p = Math.min((ts - start) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const val = Math.round(from + (to - from) * eased);
+          simTotalEl.textContent = '¥' + val.toLocaleString('ja-JP') + '〜';
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      simOpts.forEach(opt => {
+        opt.addEventListener('click', () => {
+          opt.classList.toggle('on');
+          const part = document.getElementById(opt.dataset.target);
+          if (part) part.classList.toggle('on', opt.classList.contains('on'));
+          const total = Array.from(simOpts)
+            .filter(o => o.classList.contains('on'))
+            .reduce((s, o) => s + (+o.dataset.price), 0);
+          animateTotal(total);
+        });
+      });
+
+      simCta.addEventListener('click', () => {
+        const selected = Array.from(simOpts).filter(o => o.classList.contains('on'));
+        if (selected.length === 0){
+          document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        const lines = selected.map(o => {
+          const label = o.childNodes[0].textContent.trim();
+          const price = (+o.dataset.price).toLocaleString('ja-JP');
+          return `・${label}(¥${price}〜)`;
+        });
+        const total = selected.reduce((s, o) => s + (+o.dataset.price), 0);
+        const note = document.getElementById('f-note');
+        note.value = `【荷室カスタム相談】\n${lines.join('\n')}\n概算合計: ¥${total.toLocaleString('ja-JP')}〜\n車両: ハイエース(年式・型式は追ってお伝えします)`;
+        document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // LINE見積送信処理
+      simLineCta.addEventListener('click', () => {
+        const selected = Array.from(simOpts).filter(o => o.classList.contains('on'));
+        if (selected.length === 0){
+          alert('パーツを1つ以上選択してください。');
+          return;
+        }
+        const lines = selected.map(o => {
+          const label = o.childNodes[0].textContent.trim();
+          const price = (+o.dataset.price).toLocaleString('ja-JP');
+          return `・${label} (¥${price}〜)`;
+        });
+        const total = selected.reduce((s, o) => s + (+o.dataset.price), 0);
+        const text = `【工具専門店Sagami 荷室カスタム見積相談】\n${lines.join('\n')}\n概算合計: ¥${total.toLocaleString('ja-JP')}〜\n\nこちらの内容で相談をお願いします！`;
+        window.open(`https://line.me/R/share?text=${encodeURIComponent(text)}`, '_blank');
+      });
+
+      const openBadge = document.getElementById('open-badge');
+      const openBadgeText = document.getElementById('open-badge-text');
+      function updateOpenBadge(){
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours();
+        const isWeekday = day >= 1 && day <= 5;
+        const isOpen = isWeekday && hour >= 9 && hour < 19;
+        openBadge.classList.toggle('is-open', isOpen);
+        openBadge.classList.toggle('is-closed', !isOpen);
+        openBadgeText.textContent = isOpen ? 'いま営業中' : '営業時間外';
+      }
+      updateOpenBadge();
+      setInterval(updateOpenBadge, 60000);
+
+      const heroArt = document.querySelector('.hero-art');
+      if (heroArt){
+        heroArt.addEventListener('click', () => {
+          heroArt.classList.remove('honk');
+          void heroArt.offsetWidth;
+          heroArt.classList.add('honk');
+          try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            [[0, 0.12], [0.18, 0.28]].forEach(([t, dur]) => {
+              const gain = ctx.createGain();
+              gain.gain.setValueAtTime(0.0001, ctx.currentTime + t);
+              gain.gain.exponentialRampToValueAtTime(0.25, ctx.currentTime + t + 0.02);
+              gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + t + dur);
+              gain.connect(ctx.destination);
+              [440, 554].forEach(freq => {
+                const osc = ctx.createOscillator();
+                osc.type = 'square';
+                osc.frequency.value = freq;
+                osc.connect(gain);
+                osc.start(ctx.currentTime + t);
+                osc.stop(ctx.currentTime + t + dur);
+              });
+            });
+          } catch(e){}
+        });
+      }
+    });
+  </script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const cartFab = document.getElementById('cart-fab');
+      const cartDrawer = document.getElementById('cart-drawer');
+      const cartClose = document.getElementById('cart-close');
+      const cartItemsEl = document.getElementById('cart-items');
+      const cartBadge = document.getElementById('cart-badge');
+      const cartTotalEl = document.getElementById('cart-total');
+      const cartSend = document.getElementById('cart-send');
+
+      let cart = [];
+      try {
+        const saved = localStorage.getItem('sagami-quote-list');
+        if (saved) cart = JSON.parse(saved);
+      } catch(e){}
+
+      function persist(){
+        try { localStorage.setItem('sagami-quote-list', JSON.stringify(cart)); } catch(e){}
+      }
+
+      function yen(n){ return '¥' + n.toLocaleString('ja-JP'); }
+
+      function renderCart(){
+        cartBadge.textContent = cart.length;
+        cartFab.classList.toggle('show', cart.length > 0 || cartDrawer.classList.contains('open'));
+        if (cart.length === 0){
+          cartItemsEl.innerHTML = '<p class="cart-empty">まだ商品が入っていません。<br>「＋ 見積りリストに追加」からどうぞ。</p>';
+          cartTotalEl.textContent = '¥0';
+          return;
+        }
+        cartItemsEl.innerHTML = cart.map((item, i) => `
+          <div class="cart-item">
+            <div>
+              <div class="ci-name">${item.name}</div>
+              <div class="ci-price">${yen(item.price)}</div>
+            </div>
+            <button class="ci-remove" data-index="${i}">削除</button>
+          </div>
+        `).join('');
+        const total = cart.reduce((s, it) => s + it.price, 0);
+        cartTotalEl.textContent = yen(total);
+        cartItemsEl.querySelectorAll('.ci-remove').forEach(btn => {
+          btn.addEventListener('click', () => {
+            cart.splice(+btn.dataset.index, 1);
+            persist(); renderCart(); syncAddButtons();
+          });
+        });
+      }
+
+      function syncAddButtons(){
+        document.querySelectorAll('#sale .card').forEach(card => {
+          const name = card.querySelector('.card-name').textContent;
+          const btn = card.querySelector('.add-quote');
+          if (!btn) return;
+          const inCart = cart.some(it => it.name === name);
+          btn.classList.toggle('added', inCart);
+          btn.textContent = inCart ? '✓ リストに追加済み' : '＋ 見積りリストに追加';
+        });
+      }
+
+      document.querySelectorAll('#sale .card').forEach(card => {
+        const btn = card.querySelector('.add-quote');
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const name = card.querySelector('.card-name').textContent;
+          const price = parseInt(card.dataset.price, 10) || 0;
+          const idx = cart.findIndex(it => it.name === name);
+          if (idx >= 0){ cart.splice(idx, 1); }
+          else { cart.push({ name, price }); }
+          persist(); renderCart(); syncAddButtons();
+        });
+      });
+
+      cartFab.addEventListener('click', () => {
+        cartDrawer.classList.toggle('open');
+      });
+      cartClose.addEventListener('click', () => cartDrawer.classList.remove('open'));
+
+      cartSend.addEventListener('click', () => {
+        if (cart.length === 0) return;
+        const lines = cart.map(it => `・${it.name}(${yen(it.price)})`);
+        const total = cart.reduce((s, it) => s + it.price, 0);
+        const note = document.getElementById('f-note');
+        note.value = `【見積り希望】\n${lines.join('\n')}\n合計: ${yen(total)}\n在庫と受け取り方法についてご連絡ください。`;
+        cartDrawer.classList.remove('open');
+        document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      renderCart();
+      syncAddButtons();
+
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCap = document.getElementById('lightbox-caption');
+      document.querySelectorAll('.custom-photo').forEach(photo => {
+        photo.addEventListener('click', () => {
+          const img = photo.querySelector('img');
+          const label = photo.querySelector('.cp-label');
+          if (!img) return;
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCap.textContent = label ? label.textContent : '';
+          lightbox.classList.add('open');
+        });
+      });
+      lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') lightbox.classList.remove('open');
+      });
+
+      const AVAIL_BASE = "https://script.google.com/macros/s/AKfycbzqomcD1Pvaf7Vbe1cmrBC9EGACNupAot96HFwOoHkyguhk0SBdyTEHwP-rZC5gBugP/exec";
+
+      async function loadAvailability(){
+        const cards = document.querySelectorAll('.rental-card');
+        for (const card of cards){
+          const idText = card.querySelector('.card-id');
+          if (!idText) continue;
+          const id = idText.textContent.trim();
+          if (!/^RENTAL-\d+$/.test(id)) continue;
+          try {
+            const res = await fetch(`${AVAIL_BASE}?action=availability&productId=${id}`);
+            if (!res.ok) throw new Error('network');
+            const data = await res.json();
+            const booked = data.booked || [];
+            const row = card.querySelector('.avail-row');
+            if (!row) continue;
+            const days = [];
+            const today = new Date();
+            for (let d = 0; d < 7; d++){
+              const day = new Date(today.getFullYear(), today.getMonth(), today.getDate() + d);
+              const y = day.getFullYear();
+              const m = String(day.getMonth()+1).padStart(2,'0');
+              const dd = String(day.getDate()).padStart(2,'0');
+              const iso = `${y}-${m}-${dd}`;
+              const isBooked = booked.some(b => b.start <= iso && iso <= b.end);
+              days.push(`<div class="avail-day${isBooked ? ' full' : ''}">${day.getMonth()+1}/${day.getDate()}</div>`);
+            }
+            row.innerHTML = days.join('');
+          } catch(err){}
+        }
+      }
+      loadAvailability();
+    });
+  </script>
+
+  <script>
+    const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzqomcD1Pvaf7Vbe1cmrBC9EGACNupAot96HFwOoHkyguhk0SBdyTEHwP-rZC5gBugP/exec";
+
+    document.getElementById("f-submit").addEventListener("click", async () => {
+      const statusEl = document.getElementById("f-status");
       const payload = {
-        name: document.getElementById('book-name').value,
-        plan: document.getElementById('book-plan').value,
-        date: document.getElementById('book-date').value,
-        totalEstimate: totalPrice
+        productId: "RENTAL-0001",
+        productName: document.querySelector(".form-row select").value,
+        startDate: document.querySelectorAll(".form-row input[type=date]")[0].value,
+        endDate: document.querySelectorAll(".form-row input[type=date]")[1].value,
+        name: document.querySelectorAll(".form-row input[type=text]")[0].value,
+        contact: document.querySelectorAll(".form-row input[type=text]")[1].value,
+        note: document.getElementById("f-note").value
       };
 
-      if(GAS_WEBAPP_URL === "YOUR_GAS_WEB_APP_URL_HERE") {
-        alert("【デモ処理】GASのURLを設定するとスプレッドシートへ自動保存されます。\n送信内容: " + JSON.stringify(payload));
-        btn.disabled = false;
-        btn.textContent = "GASへ送信して予約を確定する";
+      if (!payload.startDate || !payload.endDate || !payload.name || !payload.contact) {
+        statusEl.textContent = "未入力の項目があります。";
+        statusEl.style.color = "var(--vermilion)";
         return;
       }
 
+      statusEl.textContent = "送信中...";
+      statusEl.style.color = "var(--steel)";
+
       try {
-        await fetch(GAS_WEBAPP_URL, {
+        const res = await fetch(GAS_ENDPOINT, {
           method: "POST",
           body: JSON.stringify(payload)
         });
-        alert("予約が正常に完了しました！担当者よりご連絡いたします。");
+        const data = await res.json();
+        if (data.result === "success") {
+          statusEl.textContent = `予約リクエストを受け付けました(受付番号 #${data.reservationId})。店舗からの確定連絡をお待ちください。`;
+          statusEl.style.color = "#3b8f4c";
+        } else {
+          statusEl.textContent = "送信に失敗しました：" + data.message;
+          statusEl.style.color = "var(--vermilion)";
+        }
       } catch (err) {
-        alert("送信に失敗しました。時間をおいて再度お試しください。");
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "GASへ送信して予約を確定する";
+        statusEl.textContent = "通信エラーが発生しました。時間をおいて再度お試しください。";
+        statusEl.style.color = "var(--vermilion)";
       }
     });
-
-    // 初期実行
-    fetchStockData();
   </script>
+
+  <section class="insta-section" id="instagram">
+    <div class="insta-head-row">
+      <div class="section-head" style="margin-bottom:0; border-bottom:none;">
+        <span class="tag">INSTAGRAM</span>
+        <h2>最新の投稿</h2>
+      </div>
+      <a href="https://www.instagram.com/sagami502/" target="_blank" rel="noopener" class="insta-follow">
+        @sagami502 をフォロー →
+      </a>
+    </div>
+    <div class="insta-grid">
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+      <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sagami502/" data-instgrm-version="14" style="width:100%;"></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-head">
+      <span class="tag">FAQ</span>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq-item">
+      <span class="faq-num">01</span>
+      <div>
+        <div class="faq-q">レンタルの予約はすぐ確定しますか？</div>
+        <div>フォーム送信後、店舗で在庫を確認してから確定のご連絡をします。急ぎの現場は、電話でも遠慮なくどうぞ。</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <span class="faq-num">02</span>
+      <div>
+        <div class="faq-q">支払い方法は何がありますか？</div>
+        <div>販売はStripeのオンライン決済リンクで即決済。レンタルは店頭でのお支払いです。</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="access">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand"><img src="assets/logo-sagami.png" alt="Sagami">SAGAMI 工具専門店</div>
+        <p style="margin-top:14px; line-height:1.9;">〒259-1114<br>神奈川県伊勢原市高森3-1-63</p>
+        <p style="margin-top:10px; line-height:1.9;">営業時間 9:00–19:00<br>定休日 日曜（土曜も当面休業）</p>
+      </div>
+      <div class="footer-col">
+        <h5>MENU</h5>
+        <a href="#custom">荷室カスタム</a>
+        <a href="#sale">販売</a>
+        <a href="#rental">レンタル</a>
+        <a href="#news">お知らせ</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>CONTACT</h5>
+        <a href="https://www.instagram.com/sagami502/" target="_blank" rel="noopener" class="footer-insta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;vertical-align:-2px;margin-right:6px;"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>@sagami502
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© SAGAMI TOOL SPECIALTY STORE</span>
+      <span>伊勢原市高森 ｜ 販売・レンタル・荷室カスタム</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="ページ上部へ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M12 2 l1.2 2.6 a7.5 7.5 0 0 1 2.4 1 l2.8 -0.8 l1.4 2.4 l-2 2.1 a7.5 7.5 0 0 1 0 2.6 l2 2.1 l-1.4 2.4 l-2.8 -0.8 a7.5 7.5 0 0 1 -2.4 -1 L12 22 l-1.2 -2.6 a7.5 7.5 0 0 1 -2.4 -1 l-2.8 0.8 l-1.4 -2.4 l2 -2.1 a7.5 7.5 0 0 1 0 -2.6 l-2 -2.1 l1.4 -2.4 l2.8 0.8 a7.5 7.5 0 0 1 2.4 -1 Z"/>
+      <circle cx="12" cy="12" r="3.2"/>
+    </svg>
+  </button>
+
+  <button class="cart-fab" id="cart-fab" aria-label="見積りリストを開く">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><path d="M4 4 h3 l2.5 12 h9 l2.5 -8 H8"/><circle cx="10.5" cy="20" r="1.6" fill="currentColor"/><circle cx="17.5" cy="20" r="1.6" fill="currentColor"/></svg>
+    見積りリスト
+    <span class="cf-badge" id="cart-badge">0</span>
+  </button>
+
+  <div class="cart-drawer" id="cart-drawer" aria-label="見積りリスト">
+    <div class="cart-head">
+      <h4>見積りリスト</h4>
+      <button class="cart-close" id="cart-close" aria-label="閉じる">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">まだ商品が入っていません。<br>「＋ 見積りリストに追加」からどうぞ。</p>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>合計(税込)</span>
+        <span class="ct-amount" id="cart-total">¥0</span>
+      </div>
+      <button class="cart-send" id="cart-send">この内容で相談する →</button>
+      <p class="cart-note">※ボタンを押すと相談フォームにリスト内容が自動入力されます。まとめ買いのご相談・在庫確認にご利用ください。</p>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lb-caption" id="lightbox-caption"></div>
+  </div>
+
 </body>
 </html>
